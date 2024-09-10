@@ -1,645 +1,656 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UITS</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
-      <div class="container-fluid">
-        <!-- LOGO -->
-        <img src="/img/knust.png" alt="logo" width="50" height="70" />
-        <a class="navbar-brand ms-2 text-success" href="#">UITS-KNUST</a>
-        <!-- TOGGLE BUTTON -->
-        <button
-          class="navbar-toggler shadow-none border-0 bg-dark"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- SIDE-BAR -->
-        <div
-          class="sidebar offcanvas offcanvas-start justify-content-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <!-- SIDE-BAR HEADER -->
-          <div class="offcanvas-header text-white">
-            <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">
-              UITS-KNUST
-            </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-danger shadow-none border-0"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <!-- SIDE-BAR BODY -->
-          <div class="offcanvas-body" id="header">
-            <ul
-              class="navbar-nav justify-content-start justify-content-lg-end flex-grow-1 pe-3"
-              id="myDiv"
-            >
-              <li class="nav-item mx-2">
-                <a class="nav-link active text-dark" href="index.html">HOME</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link text-dark" href="principles.html"
-                  >PRINCIPLES</a
-                >
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link text-dark" href="#!">PROJECTS</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link text-dark" href="people.html">PEOPLE</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link text-dark" href="press.html">PRESS</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link text-dark" href="png.html">PING</a>
-              </li>
-            </ul>
-            <form class="d-flex d-sm-none d-lg-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                <i class="bi bi-search"></i>
-              </button>
-            </form>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UITS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg my-4 mx-5 rounded-5 shadow-lg px-4">
+    <div class="container-fluid">
+      <!-- LOGO -->
+      <img src="/img/knust.png" alt="logo" width="50" height="70" />
+      <a class="navbar-brand ms-2 text-success" href="#">UITS-KNUST</a>
+      <!-- TOGGLE BUTTON -->
+      <button class="navbar-toggler shadow-none border-0 bg-dark" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- SIDE-BAR -->
+      <div class="sidebar offcanvas offcanvas-start justify-content-end" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <!-- SIDE-BAR HEADER -->
+        <div class="offcanvas-header text-white">
+          <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">
+            UITS-KNUST
+          </h5>
+          <button type="button" class="btn-close btn-close-danger shadow-none border-0" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
         </div>
-      </div>
-    </nav>
-    <!-- HERO SECTION AND TEXT -->
-    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="false">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/img/keyb.avif" class="d-block igallery" alt="..." />
-        </div>
-        <div class="carousel-caption">
-          <h3>Lorem ipsum dolor sit2.</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
-            libero accusantium incidunt impedit quae perferendis laborum
-            similique aspernatur esse modi natus, labore reiciendis, cum ad. Eos
-            totam consectetur vel iure?
-          </p>
+        <!-- SIDE-BAR BODY -->
+        <div class="offcanvas-body" id="header">
+          <ul class="navbar-nav justify-content-start justify-content-lg-end flex-grow-1 pe-3" id="myDiv">
+            <li class="nav-item mx-2 rounded-pill btn btn-sm btn-outline-success py-0">
+              <a class="nav-link active text-dark" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-dark" href="principles.html">PRINCIPLES</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-dark" href="#!">PROJECTS</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-dark" href="people.html">PEOPLE</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-dark" href="press.html">PRESS</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-dark" href="png.html">PING</a>
+            </li>
+          </ul>
+          <form class="d-flex d-sm-none d-lg-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
         </div>
       </div>
     </div>
+  </nav>
 
-    <!-- TEXT-VIDEO -->
-    <div class="container my-5 content-section slide">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="position-relative">
+
+      <div class="hero-left rounded-5">
+        <div class="">
+          <span class="bi bi-arrow-left-circle fs-4"></span>
+          <div class="hero-left-content">
+            <h4 class="hcl-title mb-4">
+              UITS Holds Something Something
+            </h4>
+            <p class="hlc-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ducimus
+              repudiandae saepe non dicta error
+              aliquid id itaque asperiores quidem debitis harum officiis blanditiis repellat iure reiciendis rem, velit
+              cupiditate!</p>
+            <button class="btn btn-success hcl-button mt-3 rounded-pill">Read More</button>
+          </div>
+          <span class="bi bi-arrow-right-circle fs-4"></span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <img src="/img/codec.jpeg" class="img-fluild h-100 w-100 object-fit-cover rounded-start-5" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <div class="mb-5">
+    <div class="categories">
+      <span class="category-item m-2 rounded-pill mb-4 fit-content">
+        <div class="rounded-circle me-2">
+          <i class="bi bi-arrow-left-circle fs-1"></i>
+        </div>
+        <span class="fs-5">Software Development</span>
+      </span>
+
+      <span class="category-item m-2 rounded-pill mb-4 fit-content">
+        <div class="rounded-circle me-2">
+          <i class="bi bi-arrow-left-circle fs-1"></i>
+        </div>
+        <span class="fs-5">Software Development</span>
+      </span>
+
+      <span class="category-item m-2 rounded-pill mb-4 fit-content">
+        <div class="rounded-circle me-2">
+          <i class="bi bi-arrow-left-circle fs-1"></i>
+        </div>
+        <span class="fs-5">Software Development</span>
+      </span>
+
+      <span class="category-item m-2 rounded-pill mb-4 fit-content">
+        <div class="rounded-circle me-2">
+          <i class="bi bi-arrow-left-circle fs-1"></i>
+        </div>
+        <span class="fs-5">Software Development</span>
+      </span>
+
+      <span class="category-item m-2 rounded-pill mb-4 fit-content">
+        <div class="rounded-circle me-2">
+          <i class="bi bi-arrow-left-circle fs-1"></i>
+        </div>
+        <span class="fs-5">Software Development</span>
+      </span>
+
+    </div>
+
+    <div class="d-flex align-items-center justify-content-center">
+      <div><i class="bi bi-arrow-down-circle fs-2 pointer"></i></div>
+    </div>
+  </div>
+
+
+  <!-- MEDIA -->
+  <div class="conventions">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-6 text-section p-3">
-          <h2 class="lh-7 text-success">
-            UITS Holds Something <br />Something UITS Holds
-          </h2>
-          <p class="mt-4 lh-7">
-            The UITS is the main provider of Information and Communications
-            Technology (ICT) services across the administrative activities
-            Technology (ICT) services across the administrative. The UITS is the
-            main provider of Information and Communications Technology (ICT)
-            services across the administrative activities Technology (ICT)
-            services across the administrative.
-          </p>
-          <a href="#!" class="read-more-btn">Read More</a>
+        <div class="left-vids col-md-12 col-lg-6 mb-4">
+          <div class="">
+            <h4 class="hcl-title mb-4">
+              UITS Holds Something Something
+            </h4>
+            <p class="hlc-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad enim sunt deserunt fugit,
+              qui cum consectetur, nemo itaque culpa dignissimos amet officia hic magnam veritatis expedita, eveniet
+              voluptates velit a rerum! Ipsam ipsum rerum officiis culpa harum sapiente repudiandae saepe, possimus
+              odit, unde iure, nam consectetur! Nostrum esse doloribus et nisi molestias incidunt voluptatum culpa animi
+              soluta. Quia quasi in commodi illum qui eum ea ipsa quis aut libero? Fuga explicabo odit, dolore esse
+              labore cumque eaque quaerat doloribus ex ratione numquam quas accusamus veniam eos incidunt illo. Rerum
+              natus distinctio culpa nulla alias velit perferendis officiis? Similique, accusantium in.</p>
+            <button class="btn btn-success hcl-button mt-3 rounded-pill py-2 px-5">Read More</button>
+          </div>
         </div>
-        <!-- VIDEO THUMBNAIL -->
-        <div class="col-lg-6">
+        <div class="right-vids col-md-12 col-lg-6 mb-4">
           <div class="row">
-            <div class="col-6 video-thumbnail">
-              <div class="position-relative">
-                <video
-                  src="/img/DON'T BE AFRAID TO FAIL - Denzel Washington _ 1 MINUTE MOTIVATIONAL VIDEO _ Micro Motivation 2019.mp4"
-                  muted
-                  controls
-                ></video>
-              </div>
-              <div class="text-center mt-2 video-info">
-                <p class="mb-0"></p>
-              </div>
-            </div>
-            <div class="col-6 video-thumbnail">
-              <div class="position-relative">
-                <video
-                  src="/img/DON'T BE AFRAID TO FAIL - Denzel Washington _ 1 MINUTE MOTIVATIONAL VIDEO _ Micro Motivation 2019.mp4"
-                  muted
-                  controls
-                ></video>
-              </div>
-              <div class="text-center mt-2 video-info">
-                <p class="mb-0"></p>
-              </div>
-            </div>
-            <div class="col-6 video-thumbnail">
-              <div class="position-relative">
-                <video
-                  src="/img/DON'T BE AFRAID TO FAIL - Denzel Washington _ 1 MINUTE MOTIVATIONAL VIDEO _ Micro Motivation 2019.mp4"
-                  muted
-                  controls
-                ></video>
-              </div>
-              <div class="text-center mt-2 video-info">
-                <p class="mb-0"></p>
-              </div>
-            </div>
-            <div class="col-6 video-thumbnail">
-              <div class="position-relative">
-                <video
-                  src="/img/DON'T BE AFRAID TO FAIL - Denzel Washington _ 1 MINUTE MOTIVATIONAL VIDEO _ Micro Motivation 2019.mp4"
-                  muted
-                  controls
-                ></video>
-              </div>
-              <div class="text-center mt-2 video-info">
-                <p class="mb-0"></p>
-              </div>
-            </div>
+            <video class="col-sm-12 col-xxl-6 object-fit-contain mb-2" src="/img/dont-be-afraid-to-fail.mp4" muted
+              controls>
+            </video>
+
+            <video class="col-sm-12 col-xxl-6 object-fit-contain mb-2" src="/img/dont-be-afraid-to-fail.mp4" muted
+              controls></video>
+
+            <video class="col-sm-12 col-xxl-6 object-fit-contain mb-2" src="/img/dont-be-afraid-to-fail.mp4" muted
+              controls></video>
+
+            <video class="col-sm-12 col-xxl-6 object-fit-contain mb-2" src="/img/dont-be-afraid-to-fail.mp4" muted
+              controls></video>
+
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- NEWS FEED -->
-    <div class="container border-2 shadow-lg p-3 mb-5">
-      <h2 class="section-title display-4">News</h2>
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 slide">
-        <div class="col">
-          <div class="card card-custom">
+
+  <!-- NEWS -->
+  <div class="news mb-5">
+    <div class="container">
+      <h2 class="text-center my-4"> - News - </h2>
+
+      <div class="row mb-5">
+
+        <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div class="card">
             <div class="card-body">
               <h5 class="card-title">Card Title</h5>
-              <h6 class="card-subtitle mb-2">Card Subtitle</h6>
+              <h6 class="card-subtitle text-body-secondary">Card Title</h6>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, beatae culpa. Quis, unde. Quibusdam
+                nisi dolorum itaque aliquid exercitationem, delectus iure accusamus eveniet excepturi unde recusandae
+                quo enim? Eaque, eligendi.
               </p>
-              <a href="#!" class="btn btn-custom">Action 1</a>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-success">Read More</button>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card card-custom">
+
+        <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div class="card">
             <div class="card-body">
               <h5 class="card-title">Card Title</h5>
-              <h6 class="card-subtitle mb-2">Card Subtitle</h6>
+              <h6 class="card-subtitle text-body-secondary">Card Title</h6>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, beatae culpa. Quis, unde. Quibusdam
+                nisi dolorum itaque aliquid exercitationem, delectus iure accusamus eveniet excepturi unde recusandae
+                quo enim? Eaque, eligendi.
               </p>
-              <a href="#!" class="btn btn-custom">Action 1</a>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-success">Read More</button>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card card-custom">
+
+        <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div class="card">
             <div class="card-body">
               <h5 class="card-title">Card Title</h5>
-              <h6 class="card-subtitle mb-2">Card Subtitle</h6>
+              <h6 class="card-subtitle text-body-secondary">Card Title</h6>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, beatae culpa. Quis, unde. Quibusdam
+                nisi dolorum itaque aliquid exercitationem, delectus iure accusamus eveniet excepturi unde recusandae
+                quo enim? Eaque, eligendi.
               </p>
-              <a href="#!" class="btn btn-custom">Action 1</a>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-success">Read More</button>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card card-custom">
+
+        <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div class="card">
             <div class="card-body">
               <h5 class="card-title">Card Title</h5>
-              <h6 class="card-subtitle mb-2">Card Subtitle</h6>
+              <h6 class="card-subtitle text-body-secondary">Card Title</h6>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, beatae culpa. Quis, unde. Quibusdam
+                nisi dolorum itaque aliquid exercitationem, delectus iure accusamus eveniet excepturi unde recusandae
+                quo enim? Eaque, eligendi.
               </p>
-              <a href="#" class="btn btn-custom">Action 1</a>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-success">Read More</button>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card card-custom">
+
+        <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div class="card">
             <div class="card-body">
               <h5 class="card-title">Card Title</h5>
-              <h6 class="card-subtitle mb-2">Card Subtitle</h6>
+              <h6 class="card-subtitle text-body-secondary">Card Title</h6>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, beatae culpa. Quis, unde. Quibusdam
+                nisi dolorum itaque aliquid exercitationem, delectus iure accusamus eveniet excepturi unde recusandae
+                quo enim? Eaque, eligendi.
               </p>
-              <a href="#" class="btn btn-custom">Action 1</a>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-success">Read More</button>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card card-custom">
+
+        <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div class="card">
             <div class="card-body">
               <h5 class="card-title">Card Title</h5>
-              <h6 class="card-subtitle mb-2">Card Subtitle</h6>
+              <h6 class="card-subtitle text-body-secondary">Card Title</h6>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, beatae culpa. Quis, unde. Quibusdam
+                nisi dolorum itaque aliquid exercitationem, delectus iure accusamus eveniet excepturi unde recusandae
+                quo enim? Eaque, eligendi.
               </p>
-              <a href="#" class="btn btn-custom">Action 1</a>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-success">Read More</button>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card card-custom">
+
+        <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div class="card">
             <div class="card-body">
               <h5 class="card-title">Card Title</h5>
-              <h6 class="card-subtitle mb-2">Card Subtitle</h6>
+              <h6 class="card-subtitle text-body-secondary">Card Title</h6>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, beatae culpa. Quis, unde. Quibusdam
+                nisi dolorum itaque aliquid exercitationem, delectus iure accusamus eveniet excepturi unde recusandae
+                quo enim? Eaque, eligendi.
               </p>
-              <a href="#" class="btn btn-custom">Action 1</a>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-success">Read More</button>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card card-custom">
+
+        <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div class="card">
             <div class="card-body">
               <h5 class="card-title">Card Title</h5>
-              <h6 class="card-subtitle mb-2">Card Subtitle</h6>
+              <h6 class="card-subtitle text-body-secondary">Card Title</h6>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, beatae culpa. Quis, unde. Quibusdam
+                nisi dolorum itaque aliquid exercitationem, delectus iure accusamus eveniet excepturi unde recusandae
+                quo enim? Eaque, eligendi.
               </p>
-              <a href="#" class="btn btn-custom">Action 1</a>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-success">Read More</button>
             </div>
           </div>
         </div>
+
+        <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card Title</h5>
+              <h6 class="card-subtitle text-body-secondary">Card Title</h6>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, beatae culpa. Quis, unde. Quibusdam
+                nisi dolorum itaque aliquid exercitationem, delectus iure accusamus eveniet excepturi unde recusandae
+                quo enim? Eaque, eligendi.
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-success">Read More</button>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div class="d-flex justify-content-start mt-4">
-        <a href="#" class="btn btn-lg btn-custom">All News</a>
-      </div>
-    </div>
 
-    <!-- SERVICES AND OPS -->
-    <div class="container background-pattern mb-5 mt-5 services">
-      <h2 class="section-title display-4">UITS Services and Operations</h2>
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 slide">
-        <div class="col mb-5">
-          <div class="card-custom">
-            <div class="custom-card">
-              <div class="custom-icon mb-3">
-                <i class="bi bi-code-slash"></i>
-              </div>
-              <div class="custom-text">
-                <h5 class="card-title">Software Development</h5>
-              </div>
-            </div>
-            <div class="b-text">
-              <p class="card-text">
-                The software Development Department is primarily responsible for
-                developing software required by the University depending on the
-                required skill, time, and availability of such skilled
-                personnel.
-              </p>
-              <a href="#" class="btn btn-custom">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col mb-5">
-          <div class="card-custom">
-            <div class="custom-card">
-              <div class="custom-icon mb-3">
-                <i class="bi bi-hdd-network"></i>
-              </div>
-              <div class="custom-text">
-                <h5 class="card-title">
-                  Network Operations and Infrastructure
-                </h5>
-              </div>
-            </div>
-            <div class="b-text">
-              <p class="card-text">
-                The network and Infrastructure Department is in charge of
-                procurement, operations, and management of both the physical and
-                logical network infrastructure of the University.
-              </p>
-              <a href="#" class="btn btn-custom">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col mb-5">
-          <div class="card-custom">
-            <div class="custom-card">
-              <div class="custom-icon mb-3">
-                <i class="bi bi-headset"></i>
-              </div>
-              <div class="custom-text">
-                <h5 class="card-title">User Support Services</h5>
-              </div>
-            </div>
-            <div class="b-text">
-              <p class="card-text">
-                The Department coordinates five (0-4) levels of support and
-                manages the KNUST IT Support Centre.
-              </p>
-              <a href="#" class="btn btn-custom">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card-custom">
-            <div class="custom-card">
-              <div class="custom-icon mb-3">
-                <i class="bi bi-shield-lock"></i>
-              </div>
-              <div class="custom-text">
-                <h5 class="card-title display-2">
-                  Information Security & Technology Assurance
-                </h5>
-              </div>
-            </div>
-            <div class="b-text">
-              <p class="card-text">
-                The Information Security and Technology Assurance Department
-                serves as the research and development unit of the Directorate.
-              </p>
-              <a href="#" class="btn btn-custom">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card-custom">
-            <div class="custom-card">
-              <div class="custom-icon mb-3">
-                <i class="bi bi-server"></i>
-              </div>
-              <div class="custom-text">
-                <h5 class="card-title">Systems & Data Management</h5>
-              </div>
-            </div>
-            <div class="b-text">
-              <p class="card-text">
-                The Systems and Data Management Department are responsible for
-                all servers hosted at the Data Centre. They are also responsible
-                for all server installation and maintenance.
-              </p>
-              <a href="#" class="btn btn-custom">Read More</a>
-            </div>
-          </div>
-        </div>
+      <div class="">
+        <button class="btn btn-success rounded-pill px-5 py-2">All News</button>
       </div>
     </div>
+  </div>
 
-    <!-- GALLERY -->
-    <div class="gallery-slider">
-      <h2 class="gallery-title">UITS Programs Gallery</h2>
-      <p class="gallery-description">
-        The Systems and Data Management Department are responsible for all
-        servers hosted at the Data Centre. They are also responsible for all
-        server installation and management.
-      </p>
+  <!-- UITS SERVICES & OPERATIONS -->
+  <div class="services-and-operations">
+    <div class="container">
+      <h2 class="text-center"> - UITS Services and Operations - </h2>
 
-      <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#galleryCarousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#galleryCarousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#galleryCarousel"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/img/keyb.avif" alt="Program Image 1" />
-          </div>
-          <div class="carousel-item">
-            <img src="/img/knust.jpeg" alt="Program Image 2" />
-          </div>
-          <div class="carousel-item">
-            <img src="/img/bawumia-2.jpg" alt="Program Image 3" />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#galleryCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#galleryCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-    <!-- FOOTER -->
-    <footer class="footer-background pt-5 pb-3">
-      <div class="container footer-content">
-        <div class="row">
-          <!-- Departments Section -->
-          <div class="col-md-4 mb-4">
-            <h5 class="text-uppercase text-success">Departments</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!" class="text-light text-decoration-none foover"
-                  >Software Development</a
-                >
-              </li>
-              <li>
-                <a href="#!" class="text-light text-decoration-none foover"
-                  >Network Operations and Infrastructure</a
-                >
-              </li>
-              <li>
-                <a href="#!" class="text-light text-decoration-none foover"
-                  >User Support</a
-                >
-              </li>
-              <li>
-                <a href="#!" class="text-light text-decoration-none foover"
-                  >Information Security and Technology Assurance</a
-                >
-              </li>
-              <li>
-                <a href="#!" class="text-light text-decoration-none foover"
-                  >Systems and Database Management</a
-                >
-              </li>
-            </ul>
-          </div>
-          <!-- Quick Links Section -->
-          <div class="col-md-4 mb-4">
-            <h5 class="text-uppercase text-success">Quick Links</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!" class="text-light text-decoration-none foover"
-                  >Admissions Portal</a
-                >
-              </li>
-              <li>
-                <a href="#!" class="text-light text-decoration-none foover"
-                  >KNUST Email</a
-                >
-              </li>
-              <li>
-                <a href="#!" class="text-light text-decoration-none foover"
-                  >Staff Portal</a
-                >
-              </li>
-              <li>
-                <a href="#!" class="text-light text-decoration-none foover"
-                  >Students Mobile App – AIM</a
-                >
-              </li>
-              <li>
-                <a href="#!" class="text-light text-decoration-none foover"
-                  >Students Portal</a
-                >
-              </li>
-              <li>
-                <a href="#!" class="text-light text-decoration-none foover"
-                  >Virtual Classroom</a
-                >
-              </li>
-              <li>
-                <a href="#!" class="text-light text-decoration-none foover"
-                  >Online Payment Portal</a
-                >
-              </li>
-              <li>
-                <a href="#!" class="text-light text-decoration-none foover"
-                  >Off Campus Library</a
-                >
-              </li>
-              <li>
-                <a href="#!" class="text-light text-decoration-none foover"
-                  >Online Transcript Portal</a
-                >
-              </li>
-              <li>
-                <a href="#!" class="text-light text-decoration-none foover"
-                  >Open Educational Resources</a
-                >
-              </li>
-            </ul>
-          </div>
-          <!-- Contact Us Section -->
-          <div class="col-md-4 mb-4">
-            <h5 class="text-uppercase text-success">IT Support-Help Desk</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!" class="text-light text-decoration-none foover"
-                  >Affiliated Institutions</a
-                >
-              </li>
-              <li>
-                <a href="#!" class="text-light text-decoration-none foover"
-                  >For Staff</a
-                >
-              </li>
-              <li>
-                <a href="#!" class="text-light text-decoration-none foover"
-                  >For Students</a
-                >
-              </li>
-            </ul>
-            <h5 class="text-uppercase text-success mt-3">Contact Us</h5>
-            <p>
-              University Information Technology Services<br />KNUST, PMB,
-              Kumasi-Ghana
-            </p>
-            <p>
-              Telephone:
-              <a
-                href="tel:+233501597489"
-                class="text-light text-decoration-none"
-                >+233 501 597 489</a
-              >
-            </p>
-            <p>
-              Email:
-              <a
-                href="mailto:uits@knust.edu.gh"
-                class="text-light text-decoration-none"
-                >uits@knust.edu.gh</a
-              >
-            </p>
-            <div>
-              <a href="#!" class="text-light social-icon me-3"
-                ><i class="bi bi-twitter"></i
-              ></a>
-              <a href="#!" class="text-light social-icon me-3"
-                ><i class="bi bi-youtube"></i
-              ></a>
+      <div class="row">
+        <div class="col-lg-4 mb-5">
+          <div class="service-item p-2">
+            <div class="top rounded-pill shadow-lg mb-4 fit-content">
+              <div class="rounded-circle me-2">
+                <i class="bi bi-arrow-left-circle fs-1"></i>
+              </div>
+              <span class="fs-5">Software Development</span>
+            </div>
+            <div class="content mb-3">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam vero quibusdam maxime nostrum atque
+                quidem eius iusto quas inventore harum, exercitationem aut eveniet, sequi illo nemo eligendi. Nobis,
+                sint minus.
+              </p>
+            </div>
+            <div class="footer">
+              <button class="btn btn-success rounded-pill px-5 py-2">Read More</button>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <!-- BACK TO TOP -->
-    <button id="backToTopBtn" class="btn btn-dark">
-      ▲ <br />
-      TOP
-    </button>
 
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <div class="col-lg-4 mb-5">
+          <div class="service-item p-2">
+            <div class="top rounded-pill shadow-lg mb-4 fit-content">
+              <div class="rounded-circle me-2">
+                <i class="bi bi-arrow-left-circle fs-1"></i>
+              </div>
+              <span class="fs-5">Network Operations and Infrastructure</span>
+            </div>
+            <div class="content mb-3">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam vero quibusdam maxime nostrum atque
+                quidem eius iusto quas inventore harum, exercitationem aut eveniet, sequi illo nemo eligendi. Nobis,
+                sint minus.
+              </p>
+            </div>
+            <div class="footer">
+              <button class="btn btn-success rounded-pill px-5 py-2">Read More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-5">
+          <div class="service-item p-2">
+            <div class="top rounded-pill shadow-lg mb-4 w-75">
+              <div class="rounded-circle me-2">
+                <i class="bi bi-arrow-left-circle fs-1"></i>
+              </div>
+              <span class="fs-5">User Support Services</span>
+            </div>
+            <div class="content mb-3">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam vero quibusdam maxime nostrum atque
+                quidem eius iusto quas inventore harum, exercitationem aut eveniet, sequi illo nemo eligendi. Nobis,
+                sint minus.
+              </p>
+            </div>
+            <div class="footer">
+              <button class="btn btn-success rounded-pill px-5 py-2">Read More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-5">
+          <div class="service-item p-2">
+            <div class="top rounded-pill shadow-lg mb-4 fit-content">
+              <div class="rounded-circle me-2">
+                <i class="bi bi-arrow-left-circle fs-1"></i>
+              </div>
+              <span class="fs-5">Information Security & Technology Assurance</span>
+            </div>
+            <div class="content mb-3">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam vero quibusdam maxime nostrum atque
+                quidem eius iusto quas inventore harum, exercitationem aut eveniet, sequi illo nemo eligendi. Nobis,
+                sint minus.
+              </p>
+            </div>
+            <div class="footer">
+              <button class="btn btn-success rounded-pill px-5 py-2">Read More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-5">
+          <div class="service-item p-2">
+            <div class="top rounded-pill shadow-lg mb-4 w-75">
+              <div class="rounded-circle me-2">
+                <i class="bi bi-arrow-left-circle fs-1"></i>
+              </div>
+              <span class="fs-5">Systems & Data Management</span>
+            </div>
+            <div class="content mb-3">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam vero quibusdam maxime nostrum atque
+                quidem eius iusto quas inventore harum, exercitationem aut eveniet, sequi illo nemo eligendi. Nobis,
+                sint minus.
+              </p>
+            </div>
+            <div class="footer">
+              <button class="btn btn-success rounded-pill px-5 py-2">Read More</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- UITS PROGRAMS GALLERY -->
+  <div class="programs-and-gallery">
+    <div class="container">
+      <h2 class="text-center my-4"> - UITS Programs Gallery - </h2>
+
+      <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolores veritatis incidunt
+        quidem atque
+        cupiditate laudantium ex sapiente rem aliquam!</p>
+
+      <div class="row mb-5">
+        <div id="carouselExampleCaptions" class="carousel slide">
+
+          <div class="carousel-inner">
+            <div class="carousel-item active d-flex">
+              <div class="card m-2 p-3">
+                <div class="card-body">
+                  <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse deleniti
+                    cupiditate quod doloribus. Autem in exercitationem mollitia eum ducimus voluptates.</div>
+                </div>
+              </div>
+
+              <div class="card m-2 p-3">
+                <div class="card-body">
+                  <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse deleniti
+                    cupiditate quod doloribus. Autem in exercitationem mollitia eum ducimus voluptates.</div>
+                </div>
+              </div>
+
+              <div class="card m-2 p-3">
+                <div class="card-body">
+                  <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse deleniti
+                    cupiditate quod doloribus. Autem in exercitationem mollitia eum ducimus voluptates.</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="mt-5">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+          </div>
+
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer-background pt-5 pb-3">
+    <div class="container footer-content">
+      <div class="row">
+        <!-- Departments Section -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase text-success">Departments</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Software Development</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Network Operations and Infrastructure</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">User Support</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Information Security and Technology
+                Assurance</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Systems and Database Management</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Quick Links Section -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase text-success">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Admissions Portal</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">KNUST Email</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Staff Portal</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Students Mobile App – AIM</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Students Portal</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Virtual Classroom</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Online Payment Portal</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Off Campus Library</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Online Transcript Portal</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Open Educational Resources</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Contact Us Section -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase text-success">IT Support-Help Desk</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Affiliated Institutions</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">For Staff</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">For Students</a>
+            </li>
+          </ul>
+          <h5 class="text-uppercase text-success mt-3">Contact Us</h5>
+          <p>
+            University Information Technology Services<br />KNUST, PMB,
+            Kumasi-Ghana
+          </p>
+          <p>
+            Telephone:
+            <a href="tel:+233501597489" class="text-light text-decoration-none">+233 501 597 489</a>
+          </p>
+          <p>
+            Email:
+            <a href="mailto:uits@knust.edu.gh" class="text-light text-decoration-none">uits@knust.edu.gh</a>
+          </p>
+          <div>
+            <a href="#!" class="text-light social-icon me-3"><i class="bi bi-twitter"></i></a>
+            <a href="#!" class="text-light social-icon me-3"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark text-white text-center py-4 priple d-flex justify-content-between px-3 align-items-center">
+      <p class="mb-0">&copy; 2024 KNUST-UITS. All rights reserved.</p>
+
+      <button id="backToTopBtn" class="btn btn-dark">
+        <span class="d-flex flex-column justify-content-center align-items-center">
+          <i class="bi bi-arrow-up-circle fs-5"></i>
+          TOP
+        </span>
+      </button>
+    </div>
+  </footer>
+  <!-- BACK TO TOP -->
+
+
+  <!-- <script src="script.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

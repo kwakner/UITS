@@ -1,17 +1,17 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   line-height: 1.8;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
+
 }
-
-
 
 /* Slide-up animation */
 
-@keyframes appear {
+/* @keyframes appear {
   from {
     opacity: 1;
     scale: 0.5;
@@ -20,7 +20,7 @@ body {
     opacity: 1;
     scale: 1;
   }
-}
+} */
 
 .slide {
   animation: appear linear;
