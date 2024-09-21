@@ -39,6 +39,28 @@ header {
     margin: 0 auto;
 }
 
+.projects .container h4,
+.projects .container h1 {
+    color: #2b4e32;
+}
+
+.projects-filters {
+    overflow-x: scroll;
+    scrollbar-width: none;
+    display: flex;
+}
+
+.projects-filters span {
+    margin: 0 1rem;
+    color: #488b55;
+    cursor: pointer;
+}
+
+.projects-filters span:hover,
+.projects-filters span:active {
+    color: #1cd645;
+}
+
 .projects-item {
     height: 28rem;
     display: flex;
@@ -75,7 +97,6 @@ header {
 .projects-item-image div span:first-child {
     transform: translateX(0);
 }
-
 
 .projects-item-image div span:last-child {
 }
