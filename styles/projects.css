@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/img/uits-bg.png);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #000000a6;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+main {
+}
+
+header {
+    padding: 2rem;
+}
+
+.projects-gallery {
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    width: 100%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.projects {
+    height: 100%;
+    width: calc(100vw - 15rem);
+    margin: 0 auto;
+}
+
+.projects-item {
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.projects-item-image {
+    overflow: hidden;
+    flex: auto;
+    cursor: pointer;
+    position: relative;
+}
+
+.projects-item-image img {
+    height: 100%;
+    width: 100%;
+    transition: transform 1s ease;
+}
+
+.projects-item-image img:hover,
+.projects-item-image img:active {
+    transform: scale(1.25);
+}
+
+.projects-item-image div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    padding: 0.5rem 1rem;
+}
+
+.projects-item-image div span:first-child {
+    transform: translateX(0);
+}
+
+
+.projects-item-image div span:last-child {
+}
+
+.projects-item-details {
+    padding: 1rem;
+    color: #2b4e32;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    cursor: pointer;
+    box-shadow: #caebdb 0px 2.5px 12px;
+    transition: color 230ms ease-in-out;
+}
+
+.projects-item-details .title:hover,
+.projects-item-details .position:hover,
+.projects-item-details .title:active,
+.projects-item-details .position:active {
+}
+
+@media only screen and (width > 1500px) {
+}
+
+@media only screen and (width < 1500px) {
+}
+
+@media only screen and (width <= 1200px) {
+}
+
+@media only screen and (width <= 992px) {
+    .projects {
+        height: 100%;
+        width: auto;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (width <= 768px) {
+    .projects {
+        height: 100%;
+        width: auto;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (width <= 550px) {
+}
