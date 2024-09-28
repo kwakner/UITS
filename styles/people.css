@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/img/sean-stratton-ObpCE_X3j6U-unsplash.jpg);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #000000a6;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+main {
+}
+
+header {
+    background-color: #000000a6;
+    height: 26rem;
+    padding: 2rem;
+}
+
+.people-gallery {
+    background-image: url(/img/uits-bg.png);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    width: 100%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    position: relative;
+}
+
+.people {
+    position: relative;
+    height: 100%;
+    width: calc(100vw - 10rem);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: -7.5rem;
+}
+
+.people-container-bg {
+    position: absolute;
+    background-color: white;
+    border-radius: 32px;
+    padding: 3rem;
+    width: calc(100% - 15rem);
+    height: calc(100% + 6rem);
+    right: 0;
+    left: 12rem;
+    top: -11rem;
+}
+
+.people .row {
+    /* background-color: white; */
+    position: relative;
+}
+
+.people-roles {
+    display: flex;
+    flex-direction: column;
+    background-color: #e6f6ee;
+}
+
+.people-roles .rounded-circle > i {
+    background-color: #2b4e32;
+    color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.people-roles .rounded-circle > i:active,
+.people-roles .rounded-circle > i:hover,
+.people-roles .rounded-circle > i:focus {
+    color: #2b4e32;
+    background-color: white;
+}
+
+.people-roles-item {
+    color: #2b4e32;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    min-width: 12rem;
+    box-shadow: #caebdb 0px 2.5px 12px;
+}
+
+.people-roles-item:active,
+.people-roles-item:hover,
+.people-roles-item:focus {
+    background-color: #2b4e32;
+    color: white;
+    /* width: 14rem; */
+}
+
+.people-images {
+    /* background-color: white; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.people-images-item {
+    margin-bottom: 2rem;
+}
+
+.people-images-item > div {
+    height: 24rem;
+    position: relative;
+}
+
+.people-images-item-image {
+    position: absolute;
+    border-radius: 2rem;
+    overflow: hidden;
+    height: 100%;
+}
+
+.people-images-item-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+.people-images-item-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    color: #2b4e32;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: #caebdb 0px 2.5px 12px;
+}
+
+@media only screen and (width > 1500px) {
+    .people-container-bg {
+        position: absolute;
+        background-color: white;
+        border-radius: 32px;
+        padding: 3rem;
+        width: 65%;
+        height: calc(100% + 6rem);
+        margin: 0 auto;
+        left: 12rem;
+        top: -11rem;
+    }
+}
+
+@media only screen and (width < 1500px) {
+    .people-container-bg {
+        position: absolute;
+        background-color: white;
+        border-radius: 32px;
+        padding: 1rem;
+        width: calc(100vw - 10%);
+        margin: 0 auto;
+        height: calc(100% + 6rem);
+        right: 0;
+        left: 0;
+        top: -11rem;
+    }
+}
+
+@media only screen and (width <= 1200px) {
+    .people-roles {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        margin-bottom: 2rem;
+    }
+
+    .people-container-bg {
+        position: absolute;
+        background-color: white;
+        border-radius: 32px;
+        padding: 1rem;
+        width: calc(100% - 2rem);
+        margin: 0 auto;
+        height: calc(100% + 6rem);
+        right: 0;
+        left: 0;
+        top: -11rem;
+    }
+
+    .people {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: -7.5rem;
+    }
+}
+
+@media only screen and (width <= 992px) {
+    .people-container-bg {
+        position: absolute;
+        background-color: white;
+        border-radius: 32px;
+        padding: 1rem;
+        width: calc(100% - 6rem);
+        margin: 0 auto;
+        height: calc(100% + 6rem);
+        right: 0;
+        left: 0;
+        top: -11rem;
+    }
+}
+
+@media only screen and (width <= 768px) {
+}
+
+@media only screen and (width <= 550px) {
+    .people-container-bg {
+        width: 100%;
+    }
+}
