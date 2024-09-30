@@ -15,8 +15,6 @@ body {
     -webkit-background-size: cover;
 }
 
-main {
-}
 
 header {
     padding: 2rem;
@@ -113,11 +111,11 @@ header {
     transition: color 230ms ease-in-out;
 }
 
-.projects-item-details .title:hover,
+/* .projects-item-details .title:hover,
 .projects-item-details .position:hover,
 .projects-item-details .title:active,
 .projects-item-details .position:active {
-}
+} */
 
 @media only screen and (width > 1500px) {
 }
