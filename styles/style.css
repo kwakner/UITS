@@ -15,7 +15,7 @@ nav {
     background-color: #efffd3;
 }
 
-.quick-links {
+/* .quick-links {
     background-image: url(/img/coding.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,10 +27,71 @@ nav {
 .quick-links-content {
     background-color: #2a4e3291;
     padding: 4rem 2rem;
-}
+} */
+
+
+/* FOOTER */
+.footer-background {
+    background: url("/img/codec.jpeg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .footer-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 53, 28, 0.8); /* Dark green overlay with opacity */
+    z-index: 1;
+  }
+  
+  .footer-content {
+    position: relative;
+    z-index: 1;
+    color: #ffffff; /* White text */
+    line-height: 2.5;
+  }
+  
+  .foover:hover {
+    padding-bottom: 5px;
+    border-bottom: 3px solid #fff;
+    transition: all 0.3s;
+  }
+  
+  /* ICONS */
+  .social-icon {
+    border: 1px solid black;
+    background-color: #28a745;
+    height: 40px;
+    width: 80px;
+    padding: 0.8rem;
+    border-radius: 50%;
+  }
+  
+  /* BACK TO TOP */
+  #backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 99;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #backToTopBtn:hover {
+    background-color: #555;
+  }
 
 /* ICONS */
-.social-icon {
+/* .social-icon {
     border-radius: 100%;
     background-color: #28a745;
     height: 40px;
@@ -48,12 +109,12 @@ nav {
 
 .social-icons a:hover {
     color: #ccc;
-}
+} */
 
 /* FOOTER */
-.footer-background {
+/* .footer-background {
     background-color: white;
-}
+} */
 
 
 @media only screen and (width <= 768px) {
