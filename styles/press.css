@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.press{
+    background: url(/img/uits-bg.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    width: 100%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    position: relative;
+}
