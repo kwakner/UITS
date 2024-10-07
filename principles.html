@@ -14,8 +14,8 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/principles.css">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/principles.css" />
     <!-- <link rel="stylesheet" href="style.css" /> -->
   </head>
   <body>
@@ -26,29 +26,50 @@
         <img src="/img/knust.png" alt="logo" width="50" height="70" />
         <a class="navbar-brand ms-2 text-success" href="#">UITS-KNUST</a>
         <!-- TOGGLE BUTTON -->
-        <button class="navbar-toggler shadow-none border-0 bg-dark" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler shadow-none border-0 bg-dark"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- SIDE-BAR -->
-        <div class="sidebar offcanvas offcanvas-start justify-content-end" tabindex="-1" id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel">
+        <div
+          class="sidebar offcanvas offcanvas-start justify-content-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
           <!-- SIDE-BAR HEADER -->
           <div class="offcanvas-header text-white">
             <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">
               UITS-KNUST
             </h5>
-            <button type="button" class="btn-close btn-close-danger shadow-none border-0" data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
+            <button
+              type="button"
+              class="btn-close btn-close-danger shadow-none border-0"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
           </div>
           <!-- SIDE-BAR BODY -->
           <div class="offcanvas-body" id="header">
-            <ul class="navbar-nav justify-content-start justify-content-lg-end flex-grow-1 pe-3" id="myDiv">
-              <li class="nav-item mx-2 rounded-pill btn btn-sm btn-outline-success py-0">
+            <ul
+              class="navbar-nav justify-content-start justify-content-lg-end flex-grow-1 pe-3"
+              id="myDiv"
+            >
+              <li
+                class="nav-item mx-2 rounded-pill btn btn-sm btn-outline-success py-0"
+              >
                 <a class="nav-link active text-dark" href="index.html">HOME</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link active text-dark" href="principles.html">PRINCIPLES</a>
+                <a class="nav-link active text-dark" href="principles.html"
+                  >PRINCIPLES</a
+                >
               </li>
               <li class="nav-item mx-2">
                 <a class="nav-link text-dark" href="projects.html">PROJECTS</a>
@@ -63,12 +84,13 @@
                 <a class="nav-link text-dark" href="png.html">PING</a>
               </li>
             </ul>
-            <form class="d-flex d-sm-none d-lg-flex" role="search">
-              <input class="form-control me-2 shadow-none" type="search" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-outline-success" type="submit">
-                <i class="bi bi-search"></i>
-              </button>
-            </form>
+            <!-- Expandable Search Bar -->
+            <div class="search-container" id="searchBox">
+              <!-- Search Input -->
+              <input type="text" placeholder="Search..." />
+              <!-- Search Icon inside -->
+              <i class="bi bi-search"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -91,7 +113,7 @@
             height="auto"
           />
           <h2 class="mt-5">About UITS</h2>
-          <p class=" border-bottom-5 princep-bout">
+          <p class="border-bottom-5 princep-bout">
             The UITS is the main provider of Information and Communications
             Technology (ICT) services across the University. It is responsible
             for the development and acquisition of ICT Infrastructure and
@@ -116,11 +138,11 @@
           </ul>
         </div>
       </div>
-      <hr>
+      <hr />
 
       <!-- Add more rows as needed -->
       <div class="row section princep">
-        <div class="col-md-4 text-left my-auto d-message ">
+        <div class="col-md-4 text-left my-auto d-message">
           <!-- <img src="your-image-path.jpg" alt="Icon" class="icon"> -->
           <h2>Director's Message</h2>
           <p>
@@ -142,9 +164,11 @@
           <h2>The Director</h2>
         </div>
       </div>
-      <hr>
+      <hr />
 
-      <div class="row section justify-content-center align-items-center priple slide">
+      <div
+        class="row section justify-content-center align-items-center priple slide"
+      >
         <div class="col-6 col-sm-12 text-left">
           <!-- <img src="your-image-path.jpg" alt="Icon" class="icon"> -->
           <h2>Core Objectives</h2>
@@ -164,7 +188,7 @@
         </div>
       </div>
     </div>
-    <hr>
+    <hr />
     <!-- DEPARTMENTS -->
     <div class="container my-5 priple slide">
       <h2 class="text-center mb-4">Departments</h2>
@@ -305,168 +329,170 @@
     </section>
 
     <!-- FOOTER -->
-  <footer class="footer-background pt-5 pb-3">
-    <div class="container footer-content">
-      <div class="row">
-        <!-- Departments Section -->
-        <div class="col-md-3 mb-4">
-          <h5 class="text-uppercase text-success">Departments</h5>
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!" class="text-light text-decoration-none foover"
-                >Software Development</a
-              >
-            </li>
-            <li>
-              <a href="#!" class="text-light text-decoration-none foover"
-                >Network Operations and Infrastructure</a
-              >
-            </li>
-            <li>
-              <a href="#!" class="text-light text-decoration-none foover"
-                >User Support</a
-              >
-            </li>
-            <li>
-              <a href="#!" class="text-light text-decoration-none foover"
-                >Information Security and Technology Assurance</a
-              >
-            </li>
-            <li>
-              <a href="#!" class="text-light text-decoration-none foover"
-                >Systems and Database Management</a
-              >
-            </li>
-          </ul>
-        </div>
-        <!-- Quick Links Section -->
-        <div class="col-md-3 mb-4">
-          <h5 class="text-uppercase text-success">Quick Links</h5>
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!" class="text-light text-decoration-none foover"
-                >Admissions Portal</a
-              >
-            </li>
-            <li>
-              <a href="#!" class="text-light text-decoration-none foover"
-                >KNUST Email</a
-              >
-            </li>
-            <li>
-              <a href="#!" class="text-light text-decoration-none foover"
-                >Staff Portal</a
-              >
-            </li>
-            <li>
-              <a href="#!" class="text-light text-decoration-none foover"
-                >Students Mobile App – AIM</a
-              >
-            </li>
-            <li>
-              <a href="#!" class="text-light text-decoration-none foover"
-                >Students Portal</a
-              >
-            </li>
-            <li>
-              <a href="#!" class="text-light text-decoration-none foover"
-                >Virtual Classroom</a
-              >
-            </li>
-            <li>
-              <a href="#!" class="text-light text-decoration-none foover"
-                >Online Payment Portal</a
-              >
-            </li>
-            <li>
-              <a href="#!" class="text-light text-decoration-none foover"
-                >Off Campus Library</a
-              >
-            </li>
-            <li>
-              <a href="#!" class="text-light text-decoration-none foover"
-                >Online Transcript Portal</a
-              >
-            </li>
-            <li>
-              <a href="#!" class="text-light text-decoration-none foover"
-                >Open Educational Resources</a
-              >
-            </li>
-          </ul>
-        </div>
-        <!-- Contact Us Section -->
-        <div class="col-md-3 mb-4">
-          <h5 class="text-uppercase text-success">IT Support-Help Desk</h5>
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!" class="text-light text-decoration-none foover"
-                >Affiliated Institutions</a
-              >
-            </li>
-            <li>
-              <a href="#!" class="text-light text-decoration-none foover"
-                >For Staff</a
-              >
-            </li>
-            <li>
-              <a href="#!" class="text-light text-decoration-none foover"
-                >For Students</a
-              >
-            </li>
-          </ul>
-        </div>
+    <footer class="footer-background pt-5 pb-3">
+      <div class="container footer-content">
+        <div class="row">
+          <!-- Departments Section -->
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase text-success">Departments</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-light text-decoration-none foover"
+                  >Software Development</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-light text-decoration-none foover"
+                  >Network Operations and Infrastructure</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-light text-decoration-none foover"
+                  >User Support</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-light text-decoration-none foover"
+                  >Information Security and Technology Assurance</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-light text-decoration-none foover"
+                  >Systems and Database Management</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Quick Links Section -->
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase text-success">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-light text-decoration-none foover"
+                  >Admissions Portal</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-light text-decoration-none foover"
+                  >KNUST Email</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-light text-decoration-none foover"
+                  >Staff Portal</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-light text-decoration-none foover"
+                  >Students Mobile App – AIM</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-light text-decoration-none foover"
+                  >Students Portal</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-light text-decoration-none foover"
+                  >Virtual Classroom</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-light text-decoration-none foover"
+                  >Online Payment Portal</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-light text-decoration-none foover"
+                  >Off Campus Library</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-light text-decoration-none foover"
+                  >Online Transcript Portal</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-light text-decoration-none foover"
+                  >Open Educational Resources</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Contact Us Section -->
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase text-success">IT Support-Help Desk</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-light text-decoration-none foover"
+                  >Affiliated Institutions</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-light text-decoration-none foover"
+                  >For Staff</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-light text-decoration-none foover"
+                  >For Students</a
+                >
+              </li>
+            </ul>
+          </div>
 
           <div class="col-md-3 mb-4">
             <h5 class="text-uppercase text-success">Contact Us</h5>
-          <p>
-            University Information Technology Services<br />KNUST, PMB,
-            Kumasi-Ghana
-          </p>
-          <p>
-            Telephone:
-            <a
-              href="tel:+233501597489"
-              class="text-light text-decoration-none"
-              >+233 501 597 489</a
-            >
-          </p>
-          <p>
-            Email:
-            <a
-              href="mailto:uits@knust.edu.gh"
-              class="text-light text-decoration-none"
-              >uits@knust.edu.gh</a
-            >
-          </p>
-          <div>
-            <a href="#!" class="text-light social-icon me-3"
-              ><i class="bi bi-twitter"></i
-            ></a>
-            <a href="#!" class="text-light social-icon me-3"
-              ><i class="bi bi-youtube"></i
-            ></a>
+            <p>
+              University Information Technology Services<br />KNUST, PMB,
+              Kumasi-Ghana
+            </p>
+            <p>
+              Telephone:
+              <a
+                href="tel:+233501597489"
+                class="text-light text-decoration-none"
+                >+233 501 597 489</a
+              >
+            </p>
+            <p>
+              Email:
+              <a
+                href="mailto:uits@knust.edu.gh"
+                class="text-light text-decoration-none"
+                >uits@knust.edu.gh</a
+              >
+            </p>
+            <div>
+              <a href="#!" class="text-light social-icon me-3"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a href="#!" class="text-light social-icon me-3"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
           </div>
-          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-     <!-- FOOTER NAV -->
-  <footer class="bg-dark text-white py-3">
-    <div class="container d-flex justify-content-around">
-      <div class="apart">
-        <p class="mb-0">&copy; 2024 KNUST-UITS. All rights reserved.</p>
+    <!-- FOOTER NAV -->
+    <footer class="bg-dark text-white py-3">
+      <div class="container d-flex justify-content-around">
+        <div class="apart">
+          <p class="mb-0">&copy; 2024 KNUST-UITS. All rights reserved.</p>
+        </div>
+        <div class="apart">
+          <p class="mb-0">Developed and Designed by UITS-KNUST</p>
+        </div>
       </div>
-      <div class="apart">
-        <p class="mb-0">Developed and Designed by UITS-KNUST</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
     <!-- BACK TO TOP -->
     <button id="backToTopBtn" class="btn btn-dark">
-      <span class="d-flex flex-column justify-content-center align-items-center">
+      <span
+        class="d-flex flex-column justify-content-center align-items-center"
+      >
         <i class="bi bi-arrow-up-circle fs-5"></i>
         TOP
       </span>

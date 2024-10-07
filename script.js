@@ -54,46 +54,21 @@ document.querySelectorAll(".video-thumbnail").forEach((thumbnail) => {
   });
 });
 
-// Form Validation
-
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-
-  // Get form values
-  var firstName = document.getElementById('firstName').value.trim();
-  var lastName = document.getElementById('lastName').value.trim();
-  var email = document.getElementById('email').value.trim();
-  var phone = document.getElementById('phone').value.trim();
-  var description = document.getElementById('description').value.trim();
-
-  // Basic validation
-  if (!firstName || !lastName || !email || !phone || !description) {
-      alert('Please fill in all fields.');
-      return;
-  }
-
-  // Email validation
-  var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-  if (!emailPattern.test(email)) {
-      alert('Please enter a valid email address.');
-      return;
-  }
-
-  // Phone number validation (basic, can be extended for specific formats)
-  var phonePattern = /^\+?[0-9\s-]{7,15}$/;
-  if (!phonePattern.test(phone)) {
-      alert('Please enter a valid phone number.');
-      return;
-  }
-
-  alert('Form submitted successfully!');
-  // Optionally, send data to the server here
-});
-
-
 // GO BACK FUNCTION
 function goBack() {
   window.history.back();
 }
 
+// Search box click handler
+const searchBox = document.getElementById('searchBox');
+const searchInput = searchBox.querySelector('input');
 
+// Toggle active class on click
+searchBox.addEventListener('click', function() {
+    searchBox.classList.toggle('active');
+    if (searchBox.classList.contains('active')) {
+        searchInput.focus(); // Focus the input when expanded
+    } else {
+        searchInput.value = ''; // Clear input if collapsed
+    }
+});

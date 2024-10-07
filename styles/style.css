@@ -9,6 +9,56 @@ nav {
     background-color: #efffd3;
 }
 
+/* Initial styling for search bar container */
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 2px solid #165c3e; /* Green border */
+  border-radius: 30px;
+  padding: 5px 10px;
+  transition: all 0.4s ease; /* Smooth transition */
+  width: 50px; /* Initially small */
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Expanded search bar */
+.search-container.active {
+  width: 280px; /* Expands width */
+}
+
+/* Hide the input field initially */
+.search-container input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  display: none;
+  background: transparent;
+}
+
+/* Show the input when container is active */
+.search-container.active input {
+  display: block;
+}
+
+/* Styling the search icon */
+.search-container i {
+  font-size: 1.2rem;
+  color: black;
+}
+
+/* Add a hover effect for the search icon */
+.search-container:hover i {
+  color: #0d3c29;
+}
+
+/* Remove focus outline for the input */
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 /* .quick-links {
     background-image: url(/img/coding.jpg);
     background-repeat: no-repeat;
