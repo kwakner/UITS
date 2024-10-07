@@ -64,7 +64,8 @@ const searchBox = document.getElementById('searchBox');
 const searchInput = searchBox.querySelector('input');
 
 // Toggle active class on click
-searchBox.addEventListener('click', function() {
+searchBox.addEventListener('click', function(e) {
+    e.preventDefault();
     searchBox.classList.toggle('active');
     if (searchBox.classList.contains('active')) {
         searchInput.focus(); // Focus the input when expanded
