@@ -9,23 +9,38 @@ nav {
     background-color: #efffd3;
 }
 
+/* Hover State */
+/* .nav-link:hover {
+    color: white;
+    border: 1px solid #165c3e;
+    transition: all 0.3s ease-in-out; 
+} */
+
+/* Active State */
+/* .navbar-nav .nav-link.active {
+    color: #165c3e;
+    border-color: #165c3e; 
+    background-color: rgba(22, 92, 62, 0.1); 
+} */
+
+
 /* Initial styling for search bar container */
 .search-container {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
-  border: 2px solid #165c3e; /* Green border */
-  border-radius: 30px;
-  padding: 5px 10px;
   transition: width 1s;
-  width: 60px; /* Initially small */
-  background-color: white;
+  width: 50px; /* Initially small */
   cursor: pointer;
-  margin-right: 2.5rem;
+  /* margin-right: 2.5rem; */
 }
 
 /* Expanded search bar */
 .search-container.active {
   width: 250px; /* Expands width */
+  border: 2px solid #165c3e;
+  border-radius: 30px;
+  padding: 3px 10px;
 }
 
 /* Hide the input field initially */
@@ -47,6 +62,7 @@ nav {
 .search-container i {
   font-size: 1.2rem;
   color: black;
+  display: block;
 }
 
 /* Add a hover effect for the search icon */

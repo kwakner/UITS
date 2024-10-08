@@ -54,11 +54,6 @@ document.querySelectorAll(".video-thumbnail").forEach((thumbnail) => {
   });
 });
 
-// GO BACK FUNCTION
-function goBack() {
-  window.history.back();
-}
-
 // Search box click handler
 const searchBox = document.getElementById('searchBox');
 const searchInput = searchBox.querySelector('input');
