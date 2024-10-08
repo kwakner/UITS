@@ -9,20 +9,11 @@ nav {
     background-color: #efffd3;
 }
 
-/* Hover State */
-/* .nav-link:hover {
-    color: white;
-    border: 1px solid #165c3e;
-    transition: all 0.3s ease-in-out; 
-} */
-
-/* Active State */
-/* .navbar-nav .nav-link.active {
-    color: #165c3e;
-    border-color: #165c3e; 
-    background-color: rgba(22, 92, 62, 0.1); 
-} */
-
+.nav-item .active {
+  background-color: #165c3e;
+  border-radius: 50px;
+  transition: all .3s;
+}
 
 /* Initial styling for search bar container */
 .search-container {
