@@ -3,51 +3,67 @@
     padding: 0;
 }
 
+body{
+  line-height: 1.7;
+}
 
-/* PRINCIPLES */
-/* .priple.card-custom {
-    border-radius: 15px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .priple.card-header-custom {
-    background-color: #f1f8f4;
-    border-radius: 15px 15px 0 0;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .priple.card-header-custom i {
-    font-size: 24px;
-    margin-right: 10px;
-    color: #28a745;
-  }
-  
-  .priple.card-body-custom {
-    padding: 20px;
-  }
-  
-  .card-body-custom p {
-    color: #333;
-  }
-  
-  .priple .row {
-    margin-top: 4rem;
-  }
-   */
 
-   .princep-bout{
-    line-height: 1.7;
-    text-align: justify;
-   }
+.hero-section {
+  background-color: #f0f8ff;
+  padding: 4rem 0;
+}
 
-   ul .list-items{
-    line-height: 1.7;
-    text-align: justify;
-   }
+.department-card i.icon-size {
+  font-size: 3rem;
+  color: #28a745;
+}
 
-   .d-message{
-    line-height: 1.7;
-    text-align: justify;
-   }
+.card {
+  border: none;
+  border-radius: 1rem;
+}
+
+.card-body h5 {
+  font-weight: bold;
+}
+
+.card-body p {
+  font-size: 0.9rem;
+  color: #6c757d;
+  text-align: justify;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.director-message img {
+  border-radius: 15px;
+  width: 100%;
+  height: 750px;
+}
+
+.director-message{
+  background: url(/img/HERO.png);
+}
+
+p.lead{
+  text-align: justify;
+}
+
+ul.list{
+  text-align: left;
+}
+
+/* CONTACT SECTION */
+.contact-details i {
+  margin-right: 10px;
+}
+
+.social-icons a {
+  color: #6c757d;
+}
+
+.social-icons a:hover {
+  color: #0d6efd;
+}
