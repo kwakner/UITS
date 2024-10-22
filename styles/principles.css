@@ -29,8 +29,26 @@ body{
 
 .card-body p {
   font-size: 0.9rem;
-  color: #6c757d;
   text-align: justify;
+}
+
+
+.card-body .headq,
+.headq a{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: .5rem;
+  text-decoration: none;
+}
+
+.headq a:hover{
+  text-decoration: #28a745 underline;
+  transition: .3s ease;
+}
+
+.headq p{
+  font-size: 14px;
 }
 
 .bg-light {
@@ -56,7 +74,7 @@ ul.list{
 }
 
 /* CONTACT SECTION */
-.contact-details i {
+/* .contact-details i {
   margin-right: 10px;
 }
 
@@ -66,4 +84,4 @@ ul.list{
 
 .social-icons a:hover {
   color: #0d6efd;
-}
+} */
