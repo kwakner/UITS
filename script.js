@@ -1,4 +1,3 @@
-
 // BACK TO TOP
 // Get the button
 let backToTopBtn = document.getElementById("backToTopBtn");
@@ -39,16 +38,91 @@ document.querySelectorAll(".video-thumbnail").forEach((thumbnail) => {
 });
 
 // Search box click handler
-const searchBox = document.getElementById('searchBox');
-const searchInput = searchBox.querySelector('input');
+const searchBox = document.getElementById("searchBox");
+const searchInput = searchBox.querySelector("input");
 
 // Toggle active class on click
-searchBox.addEventListener('click', function(e) {
-    e.preventDefault();
-    searchBox.classList.toggle('active');
-    if (searchBox.classList.contains('active')) {
-        searchInput.focus(); // Focus the input when expanded
-    } else {
-        searchInput.value = ''; // Clear input if collapsed
-    }
+searchBox.addEventListener("click", function (e) {
+  e.preventDefault();
+  searchBox.classList.toggle("active");
+  if (searchBox.classList.contains("active")) {
+    searchInput.focus(); // Focus the input when expanded
+  } else {
+    searchInput.value = ""; // Clear input if collapsed
+  }
 });
+
+
+// Slide data: images and corresponding text
+const slides = [
+  {
+    image: "img/codec.jpeg",
+    title: "UITS Holds Something Something",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ducimus repudiandae saepe non dicta error aliquid id itaque asperiores quidem debitis harum officiis blanditiis repellat iure reiciendis rem, velit cupiditate!",
+  },
+  {
+    image: "img/coding.jpg",
+    title: "Another Event by UITS",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ducimus repudiandae saepe non dicta error aliquid id itaque asperiores quidem debitis harum officiis blanditiis repellat iure reiciendis rem, velit cupiditate!",
+  },
+  {
+    image: "img/cods.jpeg",
+    title: "UITS Workshop 2023",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ducimus repudiandae saepe non dicta error aliquid id itaque asperiores quidem debitis harum officiis blanditiis repellat iure reiciendis rem, velit cupiditate!",
+  },
+];
+
+let currentIndex = 0; // Track the current slide
+let isTransitioning = false; //prevent overlap during transitions
+
+// Function to update the slide
+function updateSlide() {
+  const sliderImage = document.getElementById("sliderImage");
+  const sliderText = document.getElementById("sliderText");
+
+ // Add "hidden" class to trigger fade-out effect
+ sliderImage.classList.add('hidden');
+ sliderText.classList.add('hidden');
+
+ // Wait for the fade-out transition to complete
+ setTimeout(() => {
+  // Update the image and text
+  sliderImage.src = slides[currentIndex].image;
+  sliderText.innerHTML = `<h3>${slides[currentIndex].title}</h3><p>${slides[currentIndex].text}</p>`;
+
+  // Remove "hidden" class to trigger fade-in effect
+  sliderImage.classList.remove('hidden');
+  sliderText.classList.remove('hidden');
+}, 1000); // Match the CSS transition duration
+}
+
+
+// Go to the next slide
+function nextSlide() {
+  if (isTransitioning) return; // Prevent multiple clicks during transition
+  isTransitioning = true;
+
+  currentIndex = (currentIndex + 1) % slides.length; // Loop back to the start
+  updateSlide();
+
+  setTimeout(() => (isTransitioning = false), 1000); // Allow transition to finish
+}
+
+// Go to the previous slide
+function prevSlide() {
+  if (isTransitioning) return; // Prevent multiple clicks during transition
+  isTransitioning = true;
+
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Loop to the end
+  updateSlide();
+
+  setTimeout(() => (isTransitioning = false), 1000); // Allow transition to finish
+  
+}
+
+// Automatically change slides every 5 seconds
+setInterval(() => {
+  if (!isTransitioning) {
+      nextSlide();
+  }
+}, 3000);
