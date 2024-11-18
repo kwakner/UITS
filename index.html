@@ -64,7 +64,7 @@
                 id="myDiv"
               >
                 <li
-                  class="nav-item mx-2  py-0"
+                  class="nav-item mx-2"
                 >
                   <a class="nav-link active text-white" href="index.html"
                     >HOME</a
@@ -104,12 +104,12 @@
       </nav>
 
       <!-- HERO -->
-      <div class="hero">
+      <div class="slider container">
         <div class="position-relative">
           <div class="hero-left rounded-5">
             <div class="">
-              <span class="bi bi-arrow-left-circle fs-4"></span>
-              <div class="hero-left-content">
+              <span class="bi bi-arrow-left-circle fs-4" onclick="prevSlide()"></span>
+              <div class="hero-left-content" id="sliderText">
                 <h4 class="hcl-title mb-4">UITS Holds Something Something</h4>
                 <p class="hlc-content">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
@@ -121,13 +121,14 @@
                   Read More
                 </button>
               </div>
-              <span class="bi bi-arrow-right-circle fs-4"></span>
+              <span class="bi bi-arrow-right-circle fs-4" onclick="nextSlide()"></span>
             </div>
           </div>
 
-          <div class="hero-right">
+          <div class="hero-right" >
             <img
-              src="img/codec.jpeg"
+              src="img/codec.jpeg" 
+              id="sliderImage"
               class="img-fluild h-100 w-100 object-fit-cover rounded-start-5"
               alt=""
             />
@@ -177,7 +178,7 @@
         </div>
 
         <div class="d-flex align-items-center justify-content-center">
-          <div><i class="bi bi-arrow-down-circle fs-2 pointer"></i></div>
+          <div><i onclick="scrollToNextSection" class="bi bi-arrow-down-circle fs-2 pointer"></i></div>
         </div>
       </div>
     </section>
@@ -246,8 +247,141 @@
         </div>
       </div>
 
+      <!-- UITS SERVICES & OPERATIONS -->
+      <div class="services-and-operations">
+        <div class="container">
+          <h2 class="text-center">- UITS Services and Operations -</h2>
+
+          <div class="row">
+            <div class="col-lg-6 col-xl-4 mb-5">
+              <div class="service-item p-2">
+                <div class="top rounded-pill shadow-lg mb-4 fit-content">
+                  <div class="rounded-circle me-2">
+                    <i class="bi bi-code-slash fs-1"></i>
+                  </div>
+                  <span class="fs-5">Software Development</span>
+                </div>
+                <div class="content mb-3">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Magnam vero quibusdam maxime nostrum atque quidem eius iusto
+                    quas inventore harum, exercitationem aut eveniet, sequi illo
+                    nemo eligendi. Nobis, sint minus.
+                  </p>
+                </div>
+                <div class="footer">
+                  <button class="btn btn-success rounded-pill px-5 py-2">
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-xl-4 mb-5">
+              <div class="service-item p-2">
+                <div class="top rounded-pill shadow-lg mb-4 fit-content">
+                  <div class="rounded-circle me-2">
+                    <i class="bi bi-hdd-network fs-1"></i>
+                  </div>
+                  <span class="fs-5"
+                    >Network Operations and Infrastructure</span
+                  >
+                </div>
+                <div class="content mb-3">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Magnam vero quibusdam maxime nostrum atque quidem eius iusto
+                    quas inventore harum, exercitationem aut eveniet, sequi illo
+                    nemo eligendi. Nobis, sint minus.
+                  </p>
+                </div>
+                <div class="footer">
+                  <button class="btn btn-success rounded-pill px-5 py-2">
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-xl-4 mb-5">
+              <div class="service-item p-2">
+                <div class="top rounded-pill shadow-lg mb-4 w-75">
+                  <div class="rounded-circle me-2">
+                    <i class="bi bi-headset fs-1"></i>
+                  </div>
+                  <span class="fs-5">User Support Services</span>
+                </div>
+                <div class="content mb-3">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Magnam vero quibusdam maxime nostrum atque quidem eius iusto
+                    quas inventore harum, exercitationem aut eveniet, sequi illo
+                    nemo eligendi. Nobis, sint minus.
+                  </p>
+                </div>
+                <div class="footer">
+                  <button class="btn btn-success rounded-pill px-5 py-2">
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-xl-4 mb-5">
+              <div class="service-item p-2">
+                <div class="top rounded-pill shadow-lg mb-4 fit-content">
+                  <div class="rounded-circle me-2">
+                    <i class="bi bi-shield-lock fs-1"></i>
+                  </div>
+                  <span class="fs-5"
+                    >Information Security & Technology Assurance</span
+                  >
+                </div>
+                <div class="content mb-3">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Magnam vero quibusdam maxime nostrum atque quidem eius iusto
+                    quas inventore harum, exercitationem aut eveniet, sequi illo
+                    nemo eligendi. Nobis, sint minus.
+                  </p>
+                </div>
+                <div class="footer">
+                  <button class="btn btn-success rounded-pill px-5 py-2">
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-xl-4 mb-5">
+              <div class="service-item p-2">
+                <div class="top rounded-pill shadow-lg mb-4 w-75">
+                  <div class="rounded-circle me-2">
+                    <i class="bi bi-database fs-1"></i>
+                  </div>
+                  <span class="fs-5">Systems & Data Management</span>
+                </div>
+                <div class="content mb-3">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Magnam vero quibusdam maxime nostrum atque quidem eius iusto
+                    quas inventore harum, exercitationem aut eveniet, sequi illo
+                    nemo eligendi. Nobis, sint minus.
+                  </p>
+                </div>
+                <div class="footer">
+                  <button class="btn btn-success rounded-pill px-5 py-2">
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- NEWS -->
-      <div class="news mb-5">
+      <div class="news mb-5" id="section3">
         <div class="container px-5">
           <h2 class="text-center my-4">- News -</h2>
 
@@ -423,141 +557,8 @@
         </div>
       </div>
 
-      <!-- UITS SERVICES & OPERATIONS -->
-      <div class="services-and-operations">
-        <div class="container">
-          <h2 class="text-center">- UITS Services and Operations -</h2>
-
-          <div class="row">
-            <div class="col-lg-6 col-xl-4 mb-5">
-              <div class="service-item p-2">
-                <div class="top rounded-pill shadow-lg mb-4 fit-content">
-                  <div class="rounded-circle me-2">
-                    <i class="bi bi-arrow-left-circle fs-1"></i>
-                  </div>
-                  <span class="fs-5">Software Development</span>
-                </div>
-                <div class="content mb-3">
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Magnam vero quibusdam maxime nostrum atque quidem eius iusto
-                    quas inventore harum, exercitationem aut eveniet, sequi illo
-                    nemo eligendi. Nobis, sint minus.
-                  </p>
-                </div>
-                <div class="footer">
-                  <button class="btn btn-success rounded-pill px-5 py-2">
-                    Read More
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-xl-4 mb-5">
-              <div class="service-item p-2">
-                <div class="top rounded-pill shadow-lg mb-4 fit-content">
-                  <div class="rounded-circle me-2">
-                    <i class="bi bi-arrow-left-circle fs-1"></i>
-                  </div>
-                  <span class="fs-5"
-                    >Network Operations and Infrastructure</span
-                  >
-                </div>
-                <div class="content mb-3">
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Magnam vero quibusdam maxime nostrum atque quidem eius iusto
-                    quas inventore harum, exercitationem aut eveniet, sequi illo
-                    nemo eligendi. Nobis, sint minus.
-                  </p>
-                </div>
-                <div class="footer">
-                  <button class="btn btn-success rounded-pill px-5 py-2">
-                    Read More
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-xl-4 mb-5">
-              <div class="service-item p-2">
-                <div class="top rounded-pill shadow-lg mb-4 w-75">
-                  <div class="rounded-circle me-2">
-                    <i class="bi bi-arrow-left-circle fs-1"></i>
-                  </div>
-                  <span class="fs-5">User Support Services</span>
-                </div>
-                <div class="content mb-3">
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Magnam vero quibusdam maxime nostrum atque quidem eius iusto
-                    quas inventore harum, exercitationem aut eveniet, sequi illo
-                    nemo eligendi. Nobis, sint minus.
-                  </p>
-                </div>
-                <div class="footer">
-                  <button class="btn btn-success rounded-pill px-5 py-2">
-                    Read More
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-xl-4 mb-5">
-              <div class="service-item p-2">
-                <div class="top rounded-pill shadow-lg mb-4 fit-content">
-                  <div class="rounded-circle me-2">
-                    <i class="bi bi-arrow-left-circle fs-1"></i>
-                  </div>
-                  <span class="fs-5"
-                    >Information Security & Technology Assurance</span
-                  >
-                </div>
-                <div class="content mb-3">
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Magnam vero quibusdam maxime nostrum atque quidem eius iusto
-                    quas inventore harum, exercitationem aut eveniet, sequi illo
-                    nemo eligendi. Nobis, sint minus.
-                  </p>
-                </div>
-                <div class="footer">
-                  <button class="btn btn-success rounded-pill px-5 py-2">
-                    Read More
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-xl-4 mb-5">
-              <div class="service-item p-2">
-                <div class="top rounded-pill shadow-lg mb-4 w-75">
-                  <div class="rounded-circle me-2">
-                    <i class="bi bi-arrow-left-circle fs-1"></i>
-                  </div>
-                  <span class="fs-5">Systems & Data Management</span>
-                </div>
-                <div class="content mb-3">
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Magnam vero quibusdam maxime nostrum atque quidem eius iusto
-                    quas inventore harum, exercitationem aut eveniet, sequi illo
-                    nemo eligendi. Nobis, sint minus.
-                  </p>
-                </div>
-                <div class="footer">
-                  <button class="btn btn-success rounded-pill px-5 py-2">
-                    Read More
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- UITS PROGRAMS GALLERY -->
-      <div class="programs-and-gallery">
+      <div class="programs-and-gallery bg-white">
         <div class="container">
           <h2 class="text-center my-4">- UITS Programs Gallery -</h2>
 
