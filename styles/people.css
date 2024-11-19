@@ -58,6 +58,10 @@ header {
     top: -11rem;
 }
 
+.tab button{
+    border: none;
+}
+
 .people .row {
     /* background-color: white; */
     position: relative;
@@ -69,7 +73,7 @@ header {
     background-color: #e6f6ee;
 }
 
-.people-roles .rounded-circle > i {
+.tab .rounded-circle > i {
     background-color: #2b4e32;
     color: white;
     width: 2.5rem;
@@ -80,12 +84,30 @@ header {
     border-radius: 100%;
 }
 
-.people-roles .rounded-circle > i:active,
+button.active{
+    background-color: #2b4e32;
+    color: #fff;
+}
+
+.active .rounded-circle i{
+    background-color: #fff;
+    color: #2b4e32;
+} 
+
+/* .rounded-circle:not(.active){
+    background-color: #fff;
+} */
+
+/* button.active.rounded-circle{
+    background-color: #fff;
+} */
+
+/* .people-roles .rounded-circle > i:active,
 .people-roles .rounded-circle > i:hover,
 .people-roles .rounded-circle > i:focus {
     color: #2b4e32;
     background-color: white;
-}
+} */
 
 .people-roles-item {
     color: #2b4e32;
@@ -97,13 +119,14 @@ header {
     box-shadow: #caebdb 0px 2.5px 12px;
 }
 
-.people-roles-item:active,
+/* .people-roles-item:active,
 .people-roles-item:hover,
 .people-roles-item:focus {
     background-color: #2b4e32;
     color: white;
-    /* width: 14rem; */
-}
+} */
+
+
 
 .people-images {
     /* background-color: white; */
