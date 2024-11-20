@@ -1,74 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/principles.css" />
-  </head>
-  <body>
-    <!-- NAVBAR -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Principles</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/principles.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="header">
     <nav class="navbar navbar-expand-lg my-4 mx-5 rounded-5 shadow-lg px-4">
       <div class="container-fluid">
         <!-- LOGO -->
         <img src="/img/knust.png" alt="logo" width="50" height="70" />
         <a class="navbar-brand ms-2 text-success" href="#">UITS-KNUST</a>
         <!-- TOGGLE BUTTON -->
-        <button
-          class="navbar-toggler shadow-none border-0 bg-dark"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler shadow-none border-0 bg-dark" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- SIDE-BAR -->
-        <div
-          class="sidebar offcanvas offcanvas-start justify-content-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
+        <div class="sidebar offcanvas offcanvas-start justify-content-end" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
           <!-- SIDE-BAR HEADER -->
           <div class="offcanvas-header text-white">
             <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">
               UITS-KNUST
             </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-danger shadow-none border-0"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
+            <button type="button" class="btn-close btn-close-danger shadow-none border-0" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
           </div>
           <!-- SIDE-BAR BODY -->
           <div class="offcanvas-body" id="header">
-            <ul
-              class="navbar-nav justify-content-start justify-content-lg-end flex-grow-1 pe-3"
-              id="myDiv"
-            >
-              <li
-                class="nav-item mx-2 py-0"
-              >
+            <ul class="navbar-nav justify-content-start justify-content-lg-end flex-grow-1 pe-3" id="myDiv">
+              <li class="nav-item mx-2 py-0">
                 <a class="nav-link text-dark" href="index.html">HOME</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link active text-white" href="principles.html"
-                  >PRINCIPLES</a
-                >
+                <a class="nav-link active text-white" href="principles.html">PRINCIPLES</a>
               </li>
               <li class="nav-item mx-2">
                 <a class="nav-link text-dark" href="projects.html">PROJECTS</a>
@@ -94,14 +69,15 @@
         </div>
       </div>
     </nav>
+  </header>
 
-    <!-- <header class="bg-dark text-white text-center py-5 priple position-sticky">
+  <!-- <header class="bg-dark text-white text-center py-5 priple position-sticky">
       <h1>About Us - KNUST-UITS</h1>
       <p>Your Gateway to Technology and Innovation at KNUST</p>
     </header> -->
-    <!-- Hero Section -->
-<section class="hero-section text- py-5">
-  <div class="container text-center">
+  <!-- Hero Section -->
+  <section class="hero-section text- py-5">
+    <div class="container text-center">
       <h1 class="display-4">About Us</h1>
       <p class="lead">
         The UITS is the main provider of Information and Communications
@@ -117,219 +93,228 @@
         in the University. It also plays an advisory role to management on
         ICT-related issues.
       </p>
-  </div>
-</section>
+    </div>
+  </section>
 
-<!-- Director's Message Section -->
-<section class="director-message py-5 bg-white">
-  <div class="container">
+  <!-- Director's Message Section -->
+  <section class="director-message py-5 bg-white">
+    <div class="container">
       <div class="row align-items-center">
-          <div class="col-lg-6 mb-4">
-              <img src="/img/Emma.jpg" alt="Director" class="img-fluid rounded">
-          </div>
-          <div class="col-lg-6">
-              <h2 class="display-6">Director's Message</h2>
-              <p class="text-muted">Our commitment to innovation and excellence drives us to achieve exceptional outcomes in everything we do. Our talented team is at the core of our success, continuously striving to meet the ever-evolving needs of our clients.</p>
-              <p class="text-muted">With a focus on collaboration, we aim to provide superior services and solutions, making a significant impact in our industry.</p>
-          </div>
+        <div class="col-lg-6 mb-4">
+          <img src="/img/Emma.jpg" alt="Director" class="img-fluid rounded">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="display-6">Director's Message</h2>
+          <p class="text-muted">Our commitment to innovation and excellence drives us to achieve exceptional outcomes in
+            everything we do. Our talented team is at the core of our success, continuously striving to meet the
+            ever-evolving needs of our clients.</p>
+          <p class="text-muted">With a focus on collaboration, we aim to provide superior services and solutions, making
+            a significant impact in our industry.</p>
+        </div>
       </div>
-  </div>
-</section>
+    </div>
+  </section>
 
-<!-- Core Services Section -->
-<section class="core-services py-5 bg-light">
-  <div class="container">
+  <!-- Core Services Section -->
+  <section class="core-services py-5 bg-light">
+    <div class="container">
       <div class="text-center mb-5">
-          <h2 class="display-6">Our Core Services</h2>
-          <p class="text-muted">We offer a wide range of services to meet the diverse needs of our clients.</p>
+        <h2 class="display-6">Our Core Services</h2>
+        <p class="text-muted">We offer a wide range of services to meet the diverse needs of our clients.</p>
       </div>
       <div class="row text-center">
-          <!-- Service 1 -->
-          <div class="col-md-4 mb-4">
-              <i class="bi bi-laptop display-4 text-success"></i>
-              <h5 class="mt-3">Custom Software Development</h5>
-              <p>We build scalable, high-performance software solutions tailored to your needs.</p>
-          </div>
-          <!-- Service 2 -->
-          <div class="col-md-4 mb-4">
-              <i class="bi bi-cloud-upload display-4 text-success"></i>
-              <h5 class="mt-3">Network Operations & Infrastructure</h5>
-              <p>Network infrastructure services focus on the design, deployment, and management of secure and efficient networks.</p>
-          </div>
-          <!-- Service 3 -->
-          <div class="col-md-4 mb-4">
-              <i class="bi bi-people-fill display-4 text-success"></i>
-              <h5 class="mt-3">User Support</h5>
-              <p>User support services assist clients and employees in resolving technical issues, ensuring smooth operations.</p>
-          </div>
-          <!-- Service 4 -->
-          <div class="col-md-4 mb-4">
-            <i class="bi bi-shield-lock display-4 text-success"></i>
-            <h5 class="mt-3">Information Security & Technology Assurance</h5>
-            <p>Information security services are designed to protect data, systems, and networks from cyber threats and unauthorized access.</p>
+        <!-- Service 1 -->
+        <div class="col-md-4 mb-4">
+          <i class="bi bi-laptop display-4 text-success"></i>
+          <h5 class="mt-3">Custom Software Development</h5>
+          <p>We build scalable, high-performance software solutions tailored to your needs.</p>
+        </div>
+        <!-- Service 2 -->
+        <div class="col-md-4 mb-4">
+          <i class="bi bi-cloud-upload display-4 text-success"></i>
+          <h5 class="mt-3">Network Operations & Infrastructure</h5>
+          <p>Network infrastructure services focus on the design, deployment, and management of secure and efficient
+            networks.</p>
+        </div>
+        <!-- Service 3 -->
+        <div class="col-md-4 mb-4">
+          <i class="bi bi-people-fill display-4 text-success"></i>
+          <h5 class="mt-3">User Support</h5>
+          <p>User support services assist clients and employees in resolving technical issues, ensuring smooth
+            operations.</p>
+        </div>
+        <!-- Service 4 -->
+        <div class="col-md-4 mb-4">
+          <i class="bi bi-shield-lock display-4 text-success"></i>
+          <h5 class="mt-3">Information Security & Technology Assurance</h5>
+          <p>Information security services are designed to protect data, systems, and networks from cyber threats and
+            unauthorized access.</p>
         </div>
         <!-- Service 5 -->
         <div class="col-md-4 mb-4">
           <i class="bi bi-database display-4 text-success"></i>
           <h5 class="mt-3">System & DataBase Management</h5>
           <p>Data management services handle the organization, storage, and security of a company’s data. </p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Core Objectives Section -->
-<section class="bg-light py-5">
-  <div class="container">
+  <!-- Core Objectives Section -->
+  <section class="bg-light py-5">
+    <div class="container">
       <h2 class="text-center mb-5">Core Objectives</h2>
       <div class="row">
-          <!-- Objective 1 -->
-          <div class="col-lg-6 mb-4">
-              <div class="card h-100 shadow-sm border-0">
-                  <div class="card-body">
-                      <h5 class="card-title"><i class="bi bi-wifi me-2"></i>Extend ICT Services</h5>
-                      <p class="card-text">To extend ICT services to all Units of the University.</p>
-                  </div>
-              </div>
+        <!-- Objective 1 -->
+        <div class="col-lg-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-wifi me-2"></i>Extend ICT Services</h5>
+              <p class="card-text">To extend ICT services to all Units of the University.</p>
+            </div>
           </div>
-          <!-- Objective 2 -->
-          <div class="col-lg-6 mb-4">
-              <div class="card h-100 shadow-sm border-0">
-                  <div class="card-body">
-                      <h5 class="card-title"><i class="bi bi-telephone-forward me-2"></i>User-Level Communication Services</h5>
-                      <p class="card-text">To ensure the availability of User-level Communication Services.</p>
-                  </div>
-              </div>
+        </div>
+        <!-- Objective 2 -->
+        <div class="col-lg-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-telephone-forward me-2"></i>User-Level Communication Services</h5>
+              <p class="card-text">To ensure the availability of User-level Communication Services.</p>
+            </div>
           </div>
-          <!-- Objective 3 -->
-          <div class="col-lg-6 mb-4">
-              <div class="card h-100 shadow-sm border-0">
-                  <div class="card-body">
-                      <h5 class="card-title"><i class="bi bi-bar-chart me-2"></i>Financial Sustainability</h5>
-                      <p class="card-text">To develop schemes for the growth and financial sustainability of ICT resources through appropriate funding and operational mechanisms.</p>
-                  </div>
-              </div>
+        </div>
+        <!-- Objective 3 -->
+        <div class="col-lg-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-bar-chart me-2"></i>Financial Sustainability</h5>
+              <p class="card-text">To develop schemes for the growth and financial sustainability of ICT resources
+                through appropriate funding and operational mechanisms.</p>
+            </div>
           </div>
-          <!-- Objective 4 -->
-          <div class="col-lg-6 mb-4">
-              <div class="card h-100 shadow-sm border-0">
-                  <div class="card-body">
-                      <h5 class="card-title"><i class="bi bi-building me-2"></i>Sustainable ICT Management</h5>
-                      <p class="card-text">To ensure sustainable management of the university’s ICT resources through the creation of appropriate institutional frameworks.</p>
-                  </div>
-              </div>
+        </div>
+        <!-- Objective 4 -->
+        <div class="col-lg-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-building me-2"></i>Sustainable ICT Management</h5>
+              <p class="card-text">To ensure sustainable management of the university’s ICT resources through the
+                creation of appropriate institutional frameworks.</p>
+            </div>
           </div>
-          <!-- Objective 5 -->
-          <div class="col-lg-6 mb-4">
-              <div class="card h-100 shadow-sm border-0">
-                  <div class="card-body">
-                      <h5 class="card-title"><i class="bi bi-archive me-2"></i>Content Management Systems</h5>
-                      <p class="card-text">To develop content management and information systems for the University.</p>
-                  </div>
-              </div>
+        </div>
+        <!-- Objective 5 -->
+        <div class="col-lg-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-archive me-2"></i>Content Management Systems</h5>
+              <p class="card-text">To develop content management and information systems for the University.</p>
+            </div>
           </div>
-          <!-- Objective 6 -->
-          <div class="col-lg-6 mb-4">
-              <div class="card h-100 shadow-sm border-0">
-                  <div class="card-body">
-                      <h5 class="card-title"><i class="bi bi-person-badge me-2"></i>Training and Development</h5>
-                      <p class="card-text">To regularly train all students and staff to equip them with the requisite skills to fully exploit the ICT environment in their respective functions.</p>
-                  </div>
-              </div>
+        </div>
+        <!-- Objective 6 -->
+        <div class="col-lg-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-person-badge me-2"></i>Training and Development</h5>
+              <p class="card-text">To regularly train all students and staff to equip them with the requisite skills to
+                fully exploit the ICT environment in their respective functions.</p>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-</section>
+    </div>
+  </section>
 
 
- <!-- Department Section -->
-<section class="department-section py-5">
-  <div class="container">
+  <!-- Department Section -->
+  <section class="department-section py-5">
+    <div class="container">
       <div class="text-center mb-5">
-          <h2 class="display-6">Our Departments</h2>
-          <p class="text-muted">Our specialized departments ensure top-tier service delivery.</p>
+        <h2 class="display-6">Our Departments</h2>
+        <p class="text-muted">Our specialized departments ensure top-tier service delivery.</p>
       </div>
       <div class="row text-center">
-          <!-- Department 1 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100 shadow">
-                  <div class="card-body">
-                      <i class="bi bi-code-slash icon-size display-4 text-success"></i>
-                      <h5 class="card-title mt-3">Software Development</h5>
-                      <p class="card-text">The software Development Department is primarily responsible for
-                        developing software required by the University depending on the
-                        required skill, time, and availability of such skilled
-                        personnel. They are also responsible for all support services
-                        that require changes to the structure of the software in
-                        question.
-                      </p>
-                      <div class="headq">
-                        <p>Head :</p>
-                        <a class="text-success" href="#!">Kojo Ankar-Brewoo</a>
-                      </div>
-                  </div>
+        <!-- Department 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <i class="bi bi-code-slash icon-size display-4 text-success"></i>
+              <h5 class="card-title mt-3">Software Development</h5>
+              <p class="card-text">The software Development Department is primarily responsible for
+                developing software required by the University depending on the
+                required skill, time, and availability of such skilled
+                personnel. They are also responsible for all support services
+                that require changes to the structure of the software in
+                question.
+              </p>
+              <div class="headq">
+                <p>Head :</p>
+                <a class="text-success" href="#!">Kojo Ankar-Brewoo</a>
               </div>
+            </div>
           </div>
-          <!-- Department 2 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100 shadow">
-                  <div class="card-body">
-                      <i class="bi bi-hdd-network icon-size display-4 text-success"></i>
-                      <h5 class="card-title mt-3">Network Operations & Infrastructure</h5>
-                      <p class="card-text">The network and Infrastructure Department is in charge of
-                        procurement, operations, and management of both the physical and
-                        logical network infrastructure of the University.
-                      </p>
-                      <div class="headq">
-                        <p>Head :</p>
-                        <a class="text-success" href="#!">Abraham Brew-Sam</a>
-                      </div>
-                  </div>
+        </div>
+        <!-- Department 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <i class="bi bi-hdd-network icon-size display-4 text-success"></i>
+              <h5 class="card-title mt-3">Network Operations & Infrastructure</h5>
+              <p class="card-text">The network and Infrastructure Department is in charge of
+                procurement, operations, and management of both the physical and
+                logical network infrastructure of the University.
+              </p>
+              <div class="headq">
+                <p>Head :</p>
+                <a class="text-success" href="#!">Abraham Brew-Sam</a>
               </div>
+            </div>
           </div>
+        </div>
         <!-- Department 3 -->
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100 shadow">
-              <div class="card-body">
-                  <i class="bi bi-shield-lock icon-size display-4 text-success"></i>
-                  <h5 class="card-title mt-3">Information Security & Technology Assurance</h5>
-                  <p class="card-text">The Information Security and Technology Assurance Department
-                    serves as the research and development unit of the Directorate.
-                    They are in charge of developing IT Policies and ensuring its
-                    implementations. They also coordinate the technology mission of
-                    the Directorate and serve as the quality control and assurance
-                    of IT systems and Infrastructure.
-                  </p>
-                  <div class="headq">
-                    <p>Head :</p>
-                    <a class="text-success" href="#!">Phanuel Seli Asense</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <!-- Dpartment 4 -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100 shadow">
             <div class="card-body">
-                <i class="bi bi-database icon-size display-4 text-success"></i>
-                <h5 class="card-title mt-3">System & DataBase Management</h5>
-                <p class="card-text">The Systems and Data Management Department are responsible for
-                  all servers hosted at the Data Centre. They are also responsible
-                  for all server installation and system maintenance, update and
-                  upgrade of operating systems, and maintenance of applications
-                  that run on these servers.
-                </p>
-                <div class="headq">
-                  <p>Head :</p>
-                  <a class="text-success" href="#!">Joachim Akute Azu</a>
-                </div>
+              <i class="bi bi-shield-lock icon-size display-4 text-success"></i>
+              <h5 class="card-title mt-3">Information Security & Technology Assurance</h5>
+              <p class="card-text">The Information Security and Technology Assurance Department
+                serves as the research and development unit of the Directorate.
+                They are in charge of developing IT Policies and ensuring its
+                implementations. They also coordinate the technology mission of
+                the Directorate and serve as the quality control and assurance
+                of IT systems and Infrastructure.
+              </p>
+              <div class="headq">
+                <p>Head :</p>
+                <a class="text-success" href="#!">Phanuel Seli Asense</a>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <!-- Department 5 -->
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card h-100 shadow">
-          <div class="card-body">
+        <!-- Dpartment 4 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <i class="bi bi-database icon-size display-4 text-success"></i>
+              <h5 class="card-title mt-3">System & DataBase Management</h5>
+              <p class="card-text">The Systems and Data Management Department are responsible for
+                all servers hosted at the Data Centre. They are also responsible
+                for all server installation and system maintenance, update and
+                upgrade of operating systems, and maintenance of applications
+                that run on these servers.
+              </p>
+              <div class="headq">
+                <p>Head :</p>
+                <a class="text-success" href="#!">Joachim Akute Azu</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Department 5 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
               <i class="bi bi-people-fill icon-size display-4 text-success"></i>
               <h5 class="card-title mt-3">User Support</h5>
               <p class="card-text">The Department coordinates five (0-4) levels of support and
@@ -347,188 +332,138 @@
                 <p>Head :</p>
                 <a class="text-success" href="#!">Kwabena Nyanteng</a>
               </div>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer class="footer-background pt-5 pb-3">
-  <div class="container footer-content">
-    <div class="row">
-      <!-- Departments Section -->
-      <div class="col-md-3 mb-4">
-        <h5 class="text-uppercase text-success">Departments</h5>
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!" class="text-light text-decoration-none foover"
-              >Software Development</a
-            >
-          </li>
-          <li>
-            <a href="#!" class="text-light text-decoration-none foover"
-              >Network Operations and Infrastructure</a
-            >
-          </li>
-          <li>
-            <a href="#!" class="text-light text-decoration-none foover"
-              >User Support</a
-            >
-          </li>
-          <li>
-            <a href="#!" class="text-light text-decoration-none foover"
-              >Information Security and Technology Assurance</a
-            >
-          </li>
-          <li>
-            <a href="#!" class="text-light text-decoration-none foover"
-              >Systems and Database Management</a
-            >
-          </li>
-        </ul>
-      </div>
-      <!-- Quick Links Section -->
-      <div class="col-md-3 mb-4">
-        <h5 class="text-uppercase text-success">Quick Links</h5>
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!" class="text-light text-decoration-none foover"
-              >Admissions Portal</a
-            >
-          </li>
-          <li>
-            <a href="#!" class="text-light text-decoration-none foover"
-              >KNUST Email</a
-            >
-          </li>
-          <li>
-            <a href="#!" class="text-light text-decoration-none foover"
-              >Staff Portal</a
-            >
-          </li>
-          <li>
-            <a href="#!" class="text-light text-decoration-none foover"
-              >Students Mobile App – AIM</a
-            >
-          </li>
-          <li>
-            <a href="#!" class="text-light text-decoration-none foover"
-              >Students Portal</a
-            >
-          </li>
-          <li>
-            <a href="#!" class="text-light text-decoration-none foover"
-              >Virtual Classroom</a
-            >
-          </li>
-          <li>
-            <a href="#!" class="text-light text-decoration-none foover"
-              >Online Payment Portal</a
-            >
-          </li>
-          <li>
-            <a href="#!" class="text-light text-decoration-none foover"
-              >Off Campus Library</a
-            >
-          </li>
-          <li>
-            <a href="#!" class="text-light text-decoration-none foover"
-              >Online Transcript Portal</a
-            >
-          </li>
-          <li>
-            <a href="#!" class="text-light text-decoration-none foover"
-              >Open Educational Resources</a
-            >
-          </li>
-        </ul>
-      </div>
-      <!-- Contact Us Section -->
-      <div class="col-md-3 mb-4">
-        <h5 class="text-uppercase text-success">IT Support-Help Desk</h5>
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!" class="text-light text-decoration-none foover"
-              >Affiliated Institutions</a
-            >
-          </li>
-          <li>
-            <a href="#!" class="text-light text-decoration-none foover"
-              >For Staff</a
-            >
-          </li>
-          <li>
-            <a href="#!" class="text-light text-decoration-none foover"
-              >For Students</a
-            >
-          </li>
-        </ul>
-      </div>
+  <!-- FOOTER -->
+  <footer class="footer-background pt-5 pb-3">
+    <div class="container footer-content">
+      <div class="row">
+        <!-- Departments Section -->
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase text-success">Departments</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Software Development</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Network Operations and Infrastructure</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">User Support</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Information Security and Technology
+                Assurance</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Systems and Database Management</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Quick Links Section -->
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase text-success">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Admissions Portal</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">KNUST Email</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Staff Portal</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Students Mobile App – AIM</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Students Portal</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Virtual Classroom</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Online Payment Portal</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Off Campus Library</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Online Transcript Portal</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Open Educational Resources</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Contact Us Section -->
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase text-success">IT Support-Help Desk</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">Affiliated Institutions</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">For Staff</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light text-decoration-none foover">For Students</a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="col-md-3 mb-4">
-        <h5 class="text-uppercase text-success">Contact Us</h5>
-        <p>
-          University Information Technology Services<br />KNUST, PMB,
-          Kumasi-Ghana
-        </p>
-        <p>
-          Telephone:
-          <a
-            href="tel:+233501597489"
-            class="text-light text-decoration-none"
-            >+233 501 597 489</a
-          >
-        </p>
-        <p>
-          Email:
-          <a
-            href="mailto:uits@knust.edu.gh"
-            class="text-light text-decoration-none"
-            >uits@knust.edu.gh</a
-          >
-        </p>
-        <div>
-          <a href="#!" class="text-light social-icon me-3"
-            ><i class="bi bi-twitter"></i
-          ></a>
-          <a href="#!" class="text-light social-icon me-3"
-            ><i class="bi bi-youtube"></i
-          ></a>
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase text-success">Contact Us</h5>
+          <p>
+            University Information Technology Services<br />KNUST, PMB,
+            Kumasi-Ghana
+          </p>
+          <p>
+            Telephone:
+            <a href="tel:+233501597489" class="text-light text-decoration-none">+233 501 597 489</a>
+          </p>
+          <p>
+            Email:
+            <a href="mailto:uits@knust.edu.gh" class="text-light text-decoration-none">uits@knust.edu.gh</a>
+          </p>
+          <div>
+            <a href="#!" class="text-light social-icon me-3"><i class="bi bi-twitter"></i></a>
+            <a href="#!" class="text-light social-icon me-3"><i class="bi bi-youtube"></i></a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- FOOTER NAV -->
-<footer class="bg-dark text-white py-3">
-  <div class="container d-flex justify-content-around">
-    <div class="apart">
-      <p class="mb-0">&copy; 2024 KNUST-UITS. All rights reserved.</p>
+  <!-- FOOTER NAV -->
+  <footer class="bg-dark text-white py-3">
+    <div class="container d-flex justify-content-around">
+      <div class="apart">
+        <p class="mb-0">&copy; 2024 KNUST-UITS. All rights reserved.</p>
+      </div>
+      <div class="apart">
+        <p class="mb-0">Developed and Designed by UITS-KNUST</p>
+      </div>
     </div>
-    <div class="apart">
-      <p class="mb-0">Developed and Designed by UITS-KNUST</p>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- BACK TO TOP -->
-<button id="backToTopBtn" class="btn btn-dark">
-  <span
-    class="d-flex flex-column justify-content-center align-items-center"
-  >
-    <i class="bi bi-arrow-up-circle fs-5"></i>
-    TOP
-  </span>
-</button>
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- BACK TO TOP -->
+  <button id="backToTopBtn" class="btn btn-dark">
+    <span class="d-flex flex-column justify-content-center align-items-center">
+      <i class="bi bi-arrow-up-circle fs-5"></i>
+      TOP
+    </span>
+  </button>
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -9,6 +9,10 @@ nav {
     background-color: #efffd3;
 }
 
+.header{
+  padding: 2rem;
+}
+
 .nav-item a.active  {
   background-color: #165c3e;
   border-radius: 50px;
