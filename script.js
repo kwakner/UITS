@@ -23,19 +23,6 @@ backToTopBtn.addEventListener("click", function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-// To play video thumbnail on hover
-document.querySelectorAll(".video-thumbnail").forEach((thumbnail) => {
-  const video = thumbnail.querySelector("video");
-
-  thumbnail.addEventListener("mouseover", () => {
-    video.play();
-  });
-
-  thumbnail.addEventListener("mouseout", () => {
-    video.pause();
-    video.currentTime = 0;
-  });
-});
 
 // Search box click handler
 const searchBox = document.getElementById("searchBox");
@@ -126,6 +113,22 @@ setInterval(() => {
       nextSlide();
   }
 }, 3000);
+
+
+
+// To play video thumbnail on hover
+document.querySelectorAll(".video-thumbnail").forEach((thumbnail) => {
+  const video = thumbnail.querySelector("video");
+
+  thumbnail.addEventListener("mouseover", () => {
+    video.play();
+  });
+
+  thumbnail.addEventListener("mouseout", () => {
+    video.pause();
+    video.currentTime = 0;
+  });
+});
 
 //PEOPLE TAB
 function openRank(evt, rankName) {
