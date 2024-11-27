@@ -46,9 +46,9 @@ header {
     top: -7.5rem;
 }
 
-.people-container-bg {
+/* .people-container-bg {
     position: absolute;
-    background-color: white;
+    background-color: black;
     border-radius: 32px;
     padding: 3rem;
     width: calc(100% - 15rem);
@@ -56,10 +56,11 @@ header {
     right: 0;
     left: 12rem;
     top: -11rem;
-}
+} */
 
 .tab button{
     border: none;
+    width: 75%;
 }
 
 .people .row {
@@ -82,17 +83,34 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 100%;
+    transition: background-color 0.3s ease;
 }
 
 button.active{
     background-color: #2b4e32;
     color: #fff;
+    width: 85%;
+    transition: width 1s;
 }
+
+button:not(.active):hover{
+    background-color: #4d6a52;
+    color: white;
+}
+
+/* :hover .rounded-circle i{
+    background-color: white;
+    color: green;
+} */
 
 .active .rounded-circle i{
     background-color: #fff;
     color: #2b4e32;
 } 
+
+.rankName{
+    display: none;
+}
 
 /* .rounded-circle:not(.active){
     background-color: #fff;
@@ -113,10 +131,12 @@ button.active{
     color: #2b4e32;
     background-color: white;
     display: flex;
+    justify-content: left;
     align-items: center;
     cursor: pointer;
-    min-width: 12rem;
+    /* min-width: 12rem; */
     box-shadow: #caebdb 0px 2.5px 12px;
+    padding: .3rem .25rem;
 }
 
 /* .people-roles-item:active,
