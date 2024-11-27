@@ -91,6 +91,7 @@ button.active{
     color: #fff;
     width: 85%;
     transition: width 1s;
+    font-size: larger;
 }
 
 button:not(.active):hover{
@@ -110,6 +111,17 @@ button:not(.active):hover{
 
 .rankName{
     display: none;
+}
+
+span.title{
+    color:  #114b1c;
+    color: green;
+    font-size: larger;
+}
+
+span.position{
+    color: #4d6a52;
+    
 }
 
 /* .rounded-circle:not(.active){
