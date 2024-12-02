@@ -147,3 +147,18 @@ function openRank(evt, rankName) {
 
 // Get the element with id="defaultOpen" and click on it
 // document.getElementById("defaultOpen").click();
+
+// PROJECT TAB
+function openProjects(evt, projectsName) {
+  var i, tabcont, tablink;
+  tabcont = document.getElementsByClassName("tabcont");
+  for (i = 0; i < tabcont.length; i++) {
+    tabcont[i].style.display = "none";
+  }
+  tablink = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablink.length; i++) {
+    tablink[i].className = tablink[i].className.replace(" active", "");
+  }
+  document.getElementById(projectsName).style.display = "block";
+  evt.currentTarget.className += " active";
+}

@@ -76,32 +76,33 @@
     </header>
 
     <!-- PROJECTS GALLERY -->
-    <section class="projects-gallery">
+    <section class="projects-gallery container-fluid">
       <div class="projects">
         <div class="container">
           <h4 class="mb-2">Our Work</h4>
           <h1 class="mb-5">Projects</h2>
             <div class="projects-filters mb-5">
-              <span>
-                <h4>All</h4>
-              </span>
-              <span>
-                <h4>Active Student</h4>
-              </span>
-              <span>
-                <h4>Staff</h4>
-              </span>
-              <span>
-                <h4>Past Student</h4>
-              </span>
-              <span>
-                <h4>Retired Staff</h4>
-              </span>
-              <span>
-                <h4>Public</h4>
-              </span>
+              <button class="tablink" onclick="openProjects(event, 'All')">
+                <a href="#!">All</a>
+              </button>
+              <button class="tablink" onclick="openProjects(event, 'Active')">
+                <a href="#!">Active Student</a>
+              </button>
+              <button class="tablink" onclick="openProjects(event, 'Staff')">
+                <a href="#!">Staff</a>
+              </button>
+              <button class="tablink" onclick="openProjects(event, 'Past')">
+                <a href="#!">Past Student</a>
+              </button>
+              <button class="tablink" onclick="openProjects(event, 'Retired')">
+                <a href="#!">Retired Staff</a>
+              </button>
+              <button class="tablink" onclick="openProjects(event, 'Public')">
+                <a href="#!">Public</a>
+              </button>
             </div>
-            <div class="row">
+            <!-- ALL -->
+            <div class="row tabcont" id="All">
               <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
                 <div class="projects-item-image">
                   <img src="/img/a.jpg" alt="profile-img" class="">
@@ -180,8 +181,411 @@
                   <h5 class="position">UITS recommended checklist for freshers</h5>
                 </div>
               </div>
-          
-            
+            </div>
+            <!-- ACTIVE -->
+            <div class="row tabcont" id="Active">
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4 projectsName">
+                <div class="projects-item-image">
+                  <img src="/img/bc.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Active Student</h6>
+                  <h5 class="position">KNUST Student Credentials</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4 projectsName">
+                <div class="projects-item-image">
+                  <img src="/img/aa.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Past Student</h6>
+                  <h5 class="position">Request for Transcript</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4 projectsName">
+                <div class="projects-item-image">
+                  <img src="/img/ab.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Public</h6>
+                  <h5 class="position">How to write recommendation</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/jm.jpeg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Retired Staff</h6>
+                  <h5 class="position">How to access payslip</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/bb.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Staff</h6>
+                  <h5 class="position">How to access email account</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/a.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Student</h6>
+                  <h5 class="position">UITS recommended checklist for freshers</h5>
+                </div>
+              </div>
+            </div>
+            <!-- STAFF -->
+            <div class="row tabcont projectsName" id="Staff">
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/bb.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Active Student</h6>
+                  <h5 class="position">KNUST Student Credentials</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/aa.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Past Student</h6>
+                  <h5 class="position">Request for Transcript</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/ab.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Public</h6>
+                  <h5 class="position">How to write recommendation</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/b.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Retired Staff</h6>
+                  <h5 class="position">How to access payslip</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/bb.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Staff</h6>
+                  <h5 class="position">How to access email account</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/bc.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Student</h6>
+                  <h5 class="position">UITS recommended checklist for freshers</h5>
+                </div>
+              </div>
+            </div>
+            <!-- PAST -->
+            <div class="row tabcont projectsName" id="Past">
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/a.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Active Student</h6>
+                  <h5 class="position">KNUST Student Credentials</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/aa.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Past Student</h6>
+                  <h5 class="position">Request for Transcript</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/ab.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Public</h6>
+                  <h5 class="position">How to write recommendation</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/b.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Retired Staff</h6>
+                  <h5 class="position">How to access payslip</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/bb.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Staff</h6>
+                  <h5 class="position">How to access email account</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/bc.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Student</h6>
+                  <h5 class="position">UITS recommended checklist for freshers</h5>
+                </div>
+              </div>
+            </div>
+            <!-- RETIRED -->
+            <div class="row tabcont projectsName" id="Retired">
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/a.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Active Student</h6>
+                  <h5 class="position">KNUST Student Credentials</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/aa.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Past Student</h6>
+                  <h5 class="position">Request for Transcript</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/ab.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Public</h6>
+                  <h5 class="position">How to write recommendation</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/b.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Retired Staff</h6>
+                  <h5 class="position">How to access payslip</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/bb.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Staff</h6>
+                  <h5 class="position">How to access email account</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/bc.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Student</h6>
+                  <h5 class="position">UITS recommended checklist for freshers</h5>
+                </div>
+              </div>
+            </div>
+            <!-- PUBLIC -->
+            <div class="row tabcont projectsName" id="Public">
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/a.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Active Student</h6>
+                  <h5 class="position">KNUST Student Credentials</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/aa.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Past Student</h6>
+                  <h5 class="position">Request for Transcript</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/ab.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Public</h6>
+                  <h5 class="position">How to write recommendation</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/b.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Retired Staff</h6>
+                  <h5 class="position">How to access payslip</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/bb.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Staff</h6>
+                  <h5 class="position">How to access email account</h5>
+                </div>
+              </div>
+              <div class="projects-item col-sm-12 col-md-6 col-xxl-4">
+                <div class="projects-item-image">
+                  <img src="/img/bc.jpg" alt="profile-img" class="">
+                  <div class="">
+                    <!-- <span class="">View Project</span> -->
+                    <span><i class="fs-4 bi bi-arrows-move"></i></span>
+                  </div>
+                </div>
+                <div class="projects-item-details">
+                  <h6 class="title">Student</h6>
+                  <h5 class="position">UITS recommended checklist for freshers</h5>
+                </div>
+              </div>
             </div>
         </div>
       </div>

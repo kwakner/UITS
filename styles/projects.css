@@ -44,15 +44,30 @@ body {
     display: flex;
 }
 
-.projects-filters span {
+button{
+    border: none;
+    background-color: transparent;
+}
+
+.projects-filters a {
     margin: 0 1rem;
     color: #488b55;
     cursor: pointer;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: x-large;
 }
 
-.projects-filters span:hover,
-.projects-filters span:active {
+/* .projects-filters a:active{
+    color: red;
+} */
+/* .projects-filters a:hover,
+.projects-filters a:active {
     color: #1cd645;
+} */
+
+.projectsName{
+    display: none;
 }
 
 .projects-item {
