@@ -159,6 +159,6 @@ function openProjects(evt, projectsName) {
   for (i = 0; i < tablink.length; i++) {
     tablink[i].className = tablink[i].className.replace(" active", "");
   }
-  document.getElementById(projectsName).style.display = "block";
+  document.getElementById(projectsName).style.display = "flex";
   evt.currentTarget.className += " active";
 }
