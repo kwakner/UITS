@@ -91,3 +91,9 @@ body{
     margin: 0;
   } */
   
+
+  @media only screen and (width <= 550px) {
+    .card{
+      padding-bottom: 3rem;
+    }
+  }
