@@ -102,8 +102,8 @@ body {
     transform: translateX(0);
 }
 
-.projects-item-image div span:last-child {
-}
+/* .projects-item-image div span:last-child {
+} */
 
 .projects-item-details {
     padding: 1rem;
