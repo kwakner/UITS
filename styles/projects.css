@@ -29,8 +29,8 @@ body {
 
 .projects {
     height: 100%;
-    width: calc(100vw - 15rem);
-    margin: 0 auto;
+    /* width: calc(100vw - 15rem); */
+    margin: auto;
 }
 
 .projects .container h4,
@@ -39,32 +39,27 @@ body {
 }
 
 .projects-filters {
-    overflow-x: scroll;
-    scrollbar-width: none;
-    display: flex;
-}
-
-button{
+    overflow: hidden;
     border: none;
     background-color: transparent;
-}
+} 
 
-.projects-filters a {
-    margin: 0 1rem;
-    color: #488b55;
+
+.projects-filters button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
     cursor: pointer;
-    text-decoration: none;
-    padding: 1rem;
-    font-size: x-large;
-}
+    padding: 14px 26px;
+    transition: 0.3s;
+    font-size: 23px;
+} 
 
-/* .projects-filters a:active{
+
+.projects-filters button.active{
     color: red;
-} */
-/* .projects-filters a:hover,
-.projects-filters a:active {
-    color: #1cd645;
-} */
+}
 
 .projectsName{
     display: none;
@@ -142,16 +137,16 @@ button{
   .position::after{
     content: '';
     position: absolute;
-    bottom: 1.2rem; /* Position the line directly under the text */
+    bottom: 1.2rem;
     left: 1rem;
     width: 0;
     height: 2px;
-    background-color: red; /* Line color */
-    transition: width 0.3s ease; /* Smooth transition */
+    background-color: red; 
+    transition: width 0.3s ease; 
   }
   
   .position:hover::after{
-    width: 100%; /* Line expands to full width on hover */
+    width: 80%; 
   }
   
   .projects-item-image img:hover::after{
