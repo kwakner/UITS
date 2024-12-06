@@ -204,6 +204,10 @@ span.position{
     box-shadow: #caebdb 0px 2.5px 12px;
 }
 
+.people-images-item-details span{
+    
+}
+
 @media only screen and (width > 1500px) {
     .people-container-bg {
         position: absolute;
@@ -235,7 +239,7 @@ span.position{
 
 @media only screen and (width <= 1200px) {
     .people-roles {
-        display: flex;
+        display: block;
         flex-direction: row;
         width: 100%;
         overflow-y: hidden;
