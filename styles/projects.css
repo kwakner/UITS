@@ -39,10 +39,6 @@ body {
 }
 
 div.projects-filters {
-    /* overflow: hidden;
-    border: none;
-    background-color: transparent; */
-    
     overflow: auto;
     white-space: nowrap;
 } 
@@ -54,9 +50,10 @@ div.projects-filters {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 26px;
+    padding: 14px 36px;
     transition: 0.3s;
     font-size: 23px;
+    margin-left: -1.8rem;
 } 
 
 
