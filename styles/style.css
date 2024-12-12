@@ -204,3 +204,11 @@ input:focus {
         margin-right: 0 !important;
     }
 }
+
+
+@media only screen and (width <=500px) {
+
+  #backToTopBtn{
+    padding: 15px;
+  }
+}

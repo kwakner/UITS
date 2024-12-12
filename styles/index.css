@@ -7,73 +7,6 @@ html{
     scroll-behavior: smooth;
 }
 
-/* .carousel-container {
-    position: relative;
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 12px;
-}
-.carousel-slide {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #333;
-    transition: background-image 0.5s ease-in-out;
-    background-size: cover;
-    background-position: center;
-}
-.content-box {
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    max-width: 500px;
-}
-.content-box h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-.content-box p {
-    font-size: 16px;
-    color: #555;
-}
-.carousel-arrows {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-    padding: 0 15px;
-}
-.carousel-arrows i {
-    cursor: pointer;
-    font-size: 24px;
-    color: #333;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    border-radius: 50%;
-    transition: background-color 0.3s;
-}
-.carousel-arrows i:hover {
-    background-color: #4fc3f7;
-    color: white;
-}
-.btn-read-more {
-    background-color: #4caf50;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-.btn-read-more:hover {
-    background-color: #388e3c;
-    color: white;
-} */
 
 .nav-hero-cat {
     background-image: url(/img/HERO.png);
@@ -82,7 +15,6 @@ html{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding: 2rem;
 }
 
 .feat-news-services{
@@ -100,8 +32,7 @@ html{
     width: 100%;
     background-color: transparent;
     z-index: 1200;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin: 3rem auto;
 }
 
 .slider .hero-left {
@@ -159,6 +90,25 @@ html{
     transform: translateY(20px); /* Move text down during the fade */
 }
 
+/* NEWER */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .bg-success {
+    opacity: 0.95; /* Slight transparency for better readability */
+  }
+  
+  h2 {
+    font-size: 1.5rem; /* Adjust for mobile screens */
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+
 
 /* CATEGORIES */
 .categories {
@@ -202,7 +152,7 @@ html{
 }
 
 .conventions {
-    padding: 4rem;
+    padding: .5rem;
 }
 
 .left-vids {
@@ -294,7 +244,12 @@ html{
     }
 }
 
-@media only screen and (width <= 768px) {
+@media only screen and (width <= 868px) {
+
+    .slider{
+        display: none;
+    }
+
     .hero {
         /* background-color: blue; */
         position: static;
@@ -318,6 +273,10 @@ html{
         position: static;
         width: 100%;
     }
+
+    .categories{
+        display: none;
+    }
 }
 
 @media only screen and (width <= 550px) {
@@ -331,5 +290,13 @@ html{
     .hero .hero-left .hero-left-content {
         padding-top: 18px;
         padding-bottom: 18px;
+    }
+
+    .cabile{
+        margin-bottom: 20px;
+    }
+
+    .t-content{
+       padding: 1rem;
     }
 }
