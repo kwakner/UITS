@@ -197,6 +197,12 @@ input:focus {
     background-color: white;
 } */
 
+@media only screen and (width <= 1044px) {
+  .header{
+    padding: 0;
+  }
+}
+
 
 @media only screen and (width <= 768px) {
     .navbar {
