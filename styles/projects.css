@@ -194,5 +194,8 @@ div.projects-filters {
 }
 
 @media only screen and (width <= 550px) {
-    
+    .projects-filters button{
+        font-size: 18px;
+        margin-bottom: -5px;
+    }
 }
