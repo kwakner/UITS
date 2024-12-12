@@ -38,10 +38,13 @@ body {
     color: #2b4e32;
 }
 
-.projects-filters {
-    overflow: hidden;
+div.projects-filters {
+    /* overflow: hidden;
     border: none;
-    background-color: transparent;
+    background-color: transparent; */
+    
+    overflow: auto;
+    white-space: nowrap;
 } 
 
 
@@ -166,7 +169,8 @@ body {
 @media only screen and (width < 1500px) {
 }
 
-@media only screen and (width <= 1200px) {
+@media only screen and (width <= 1440px) {
+    
 }
 
 @media only screen and (width <= 992px) {
@@ -183,7 +187,15 @@ body {
         width: auto;
         margin: 0 auto;
     }
+
+
+    .projects-filters{
+        display: flex;
+        overflow: auto;
+        white-space: nowrap;
+    }
 }
 
 @media only screen and (width <= 550px) {
+    
 }
