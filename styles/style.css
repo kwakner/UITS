@@ -217,4 +217,9 @@ input:focus {
   #backToTopBtn{
     padding: 15px;
   }
+
+  .t-logo{
+    width: 35px;
+    height: 50px;
+  }
 }
