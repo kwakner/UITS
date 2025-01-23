@@ -244,14 +244,24 @@ html{
     }
 }
 
-@media only screen and (width <= 868px) {
+
+@media only screen and (width <= 992px){
+    .slider{
+      display: none;
+    }
+  
+    .categories{
+      display: none;
+    }
+  }
+
+/* @media only screen and (width <= 868px) {
 
     .slider{
         display: none;
     }
 
     .hero {
-        /* background-color: blue; */
         position: static;
         display: flex;
         flex-direction: column;
@@ -273,11 +283,7 @@ html{
         position: static;
         width: 100%;
     }
-
-    .categories{
-        display: none;
-    }
-}
+} */
 
 @media only screen and (width <= 550px) {
     .hero .hero-left {

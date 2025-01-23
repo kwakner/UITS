@@ -17,30 +17,17 @@ nav {
   transition: transform 3s ease-in;
 }
 
+.nav-item a{
+  color: black;
+}
+
 .nav-item a.active  {
-  background-color: #165c3e;
+  color: #28a745;
+  border: 2px solid #28a745;
   border-radius: 50px;
+  background-color: transparent;
 } 
 
-
-/* nav-link:hover {
-  background-color: #f5f5f5;
-  color: #e3efe6; 
-} */
-
-
-/* a:hover{
-  background-color: transparent;
-  border-radius: 50px;
-  border: 2px solid #165c3e;
-} */
-/* .nav-item a:not(.active):hover {
-  background-color: transparent;
-  color: green;
-  border-radius: 50px;
-  border: 2px solid #165c3e; 
-  transition: all .3s ease-in-out;
-} */
 
 
 /* Initial styling for search bar container */
@@ -49,14 +36,13 @@ nav {
   flex-direction: row-reverse;
   align-items: center;
   transition: width 1s;
-  width: 50px; /* Initially small */
+  width: 50px; 
   cursor: pointer;
-  /* margin-right: 2.5rem; */
-}
+} 
 
 /* Expanded search bar */
 .search-container.active {
-  width: 250px; /* Expands width */
+  width: 250px; 
   border: 2px solid #165c3e;
   border-radius: 30px;
   padding: 3px 10px;
@@ -82,7 +68,7 @@ nav {
   font-size: 1.2rem;
   color: black;
   display: block;
-}
+} 
 
 /* Add a hover effect for the search icon */
 .search-container:hover i {
@@ -95,19 +81,13 @@ input:focus {
   box-shadow: none;
 }
 
-/* .quick-links {
-    background-image: url(/img/coding.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
-}
 
-.quick-links-content {
-    background-color: #2a4e3291;
-    padding: 4rem 2rem;
-} */
+/* SIDEBAR */
+
+.sidebar{
+  background-color: black;
+  
+}
 
 
 /* FOOTER */
@@ -204,11 +184,31 @@ input:focus {
 }
 
 
+/* @media only screen and (width <= 992px){
+  .sidebar{
+    background-color: rgb(213, 145, 145);
+    color: #fff;
+    font-size: 23px;
+  }
+  
+  .sidebar .offcanvas-body{
+    display: grid;
+    place-content: start;
+    align-items: start;
+  }
+
+  .sidebar .offcanvas-body a{
+    color: #fff;
+  }
+} */
+
+
 @media only screen and (width <= 768px) {
     .navbar {
         margin-left: 0 !important;
         margin-right: 0 !important;
     }
+
 }
 
 

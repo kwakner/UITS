@@ -70,28 +70,28 @@
                   <li
                     class="nav-item mx-2 py-0"
                   >
-                    <a class="nav-link text-dark" href="index.html"
+                    <a class="nav-link" href="index.html"
                       >HOME</a
                     >
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link text-dark" href="principles.html"
+                    <a class="nav-link" href="principles.html"
                       >PRINCIPLES</a
                     >
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link text-dark" href="projects.html"
+                    <a class="nav-link" href="projects.html"
                       >PROJECTS</a
                     >
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link active text-white" href="people.html">PEOPLE</a>
+                    <a class="nav-link active text-success" href="people.html">PEOPLE</a>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link text-dark" href="press.html">PRESS</a>
+                    <a class="nav-link" href="press.html">PRESS</a>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link text-dark" href="png.html">PING</a>
+                    <a class="nav-link" href="png.html">PING</a>
                   </li>
                 </ul>
                 <!-- Expandable Search Bar -->
@@ -115,6 +115,32 @@
         <div class="people">
           <div class="container">
             <div class="row">
+
+              <!-- MOBILE OPTION-SELECT -->
+
+              <div>
+                <label for="category">Select Category:</label>
+                <select id="category" onchange="updateList()">
+                  <option value="leadership">Leadership</option>
+                  <option value="team">Team</option>
+                  <option value="advisors">Advisors</option>
+                </select>
+              </div>
+              
+              <div id="names-list">
+                <!-- Default list for "Leadership" -->
+                <div>
+                  <h3>Steve Ambuul</h3>
+                  <p>Director of Revenue Operations</p>
+                </div>
+                <div>
+                  <h3>Mel Phelps Cevik</h3>
+                  <p>Regional Director, APAC</p>
+                </div>
+              </div>
+              
+
+              <!-- DESKTOP -->
               <div class="people-roles-bg col-12 col-md-3 tab">
                 <div class="people-roles p-3 rounded-5">
                   <button class="people-roles-item m-3 tablinks rounded-pill active" onclick="openRank(event,'Senior')" id="defaultOpen">

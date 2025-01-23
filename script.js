@@ -162,3 +162,49 @@ function openProjects(evt, projectsName) {
   document.getElementById(projectsName).style.display = "flex";
   evt.currentTarget.className += " active";
 }
+
+// MOBILE FOR OPTION-SELECT
+
+function updateList() {
+  const category = document.getElementById("category").value;
+  const namesList = document.getElementById("names-list");
+
+  let namesHTML = "";
+
+  if (category === "leadership") {
+    namesHTML = `
+      <div>
+        <h3>Steve Ambuul</h3>
+        <p>Director of Revenue Operations</p>
+      </div>
+      <div>
+        <h3>Mel Phelps Cevik</h3>
+        <p>Regional Director, APAC</p>
+      </div>
+    `;
+  } else if (category === "team") {
+    namesHTML = `
+      <div>
+        <h3>Jane Doe</h3>
+        <p>Software Engineer</p>
+      </div>
+      <div>
+        <h3>John Smith</h3>
+        <p>Product Manager</p>
+      </div>
+    `;
+  } else if (category === "advisors") {
+    namesHTML = `
+      <div>
+        <h3>Alex Johnson</h3>
+        <p>Strategy Advisor</p>
+      </div>
+      <div>
+        <h3>Sara Lee</h3>
+        <p>Business Advisor</p>
+      </div>
+    `;
+  }
+
+  namesList.innerHTML = namesHTML;
+}
