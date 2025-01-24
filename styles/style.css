@@ -83,7 +83,7 @@ input:focus {
 
 
 /* SIDEBAR */
-.navbar-nav li a{
+.sidebar .navbar-nav li a{
   color: white;
   font-size: 22px;
 }
