@@ -83,12 +83,10 @@ input:focus {
 
 
 /* SIDEBAR */
-
-.sidebar{
-  background-color: black;
-  
+.navbar-nav li a{
+  color: white;
+  font-size: 22px;
 }
-
 
 /* FOOTER */
 .footer-background {
