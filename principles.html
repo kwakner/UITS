@@ -14,39 +14,44 @@
 
 <body>
   <!-- NAVBAR -->
+  <!-- NAVBAR -->
   <header class="header">
     <nav class="navbar navbar-expand-lg my-4 mx-5 rounded-5 shadow-lg px-4">
       <div class="container-fluid">
         <!-- LOGO -->
-        <img class="t-logo" src="/img/knust.png" alt="logo" width="50" height="70" />
-        <a class="navbar-brand ms-2 text-success" href="#">UITS-KNUST</a>
+        <img class="t-logo" src="img/knust.png" alt="logo" width="50" height="70" />
+        <a class="navbar-brand ms-2 text-success" href="index.html">UITS-KNUST</a>
         <!-- TOGGLE BUTTON -->
-        <button class="navbar-toggler shadow-none border-0 bg-dark" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button
+          class="navbar-toggler shadow-none border-0 bg-success"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu"
+        >
+          <span class="navbar-toggler-icon text-light"></span>
         </button>
-        <!-- SIDE-BAR -->
-        <div class="sidebar offcanvas offcanvas-start justify-content-end" tabindex="-1" id="mobileMenu"
-          aria-labelledby="mobileMenuLabel">
-          <!-- SIDE-BAR HEADER -->
-          <div class="offcanvas-header text-white">
-            <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">
-              UITS-KNUST
-            </h5>
-            <button type="button" class="btn-close btn-close-danger shadow-none border-0" data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
-          </div>
-          <!-- SIDE-BAR BODY -->
-          <div class="offcanvas-body" id="header">
-            <ul class="navbar-nav justify-content-start justify-content-lg-end flex-grow-1 pe-3" id="myDiv">
-              <li class="nav-item mx-2 py-0">
-                <a class="nav-link" href="index.html">HOME</a>
+        <!-- NAV-BAR -->
+         <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- NAV-BAR BODY -->
+            <ul
+              class="navbar-nav justify-content-end flex-grow-1 pe-3"
+              id="myDiv"
+            >
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="index.html"
+                  >HOME</a
+                >
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link active text-success" href="principles.html">PRINCIPLES</a>
+                <a class="nav-link active text-success" href="principles.html"
+                  >PRINCIPLES</a
+                >
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="projects.html">PROJECTS</a>
+                <a class="nav-link" href="projects.html"
+                  >PROJECTS</a
+                >
               </li>
               <li class="nav-item mx-2">
                 <a class="nav-link" href="people.html">PEOPLE</a>
@@ -65,16 +70,33 @@
               <!-- Search Input -->
               <input type="text" placeholder="Search..." />
             </div>
-          </div>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- <header class="bg-dark text-white text-center py-5 priple position-sticky">
-      <h1>About Us - KNUST-UITS</h1>
-      <p>Your Gateway to Technology and Innovation at KNUST</p>
-    </header> -->
+  <!-- SIDEBAR -->
+
+      <!-- SIDEBAR BODY -->
+      <div class="sidebar offcanvas offcanvas-start bg-dark" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-success" id="offcanvasNavbarLabel">
+            UITS-KNUST
+          </h5>
+            <button type="button" class="btn-close shadow-none btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body mx-3">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="principles.html">Principles</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="people.html">People</a></li>
+                <li class="nav-item"><a class="nav-link" href="press.html">Press</a></li>
+                <li class="nav-item"><a class="nav-link" href="png.html">Ping</a></li>
+            </ul>
+        </div>
+    </div>
+
   <!-- Hero Section -->
   <section class="hero-section text- py-5">
     <div class="container text-center">
