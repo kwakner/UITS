@@ -4,27 +4,36 @@
 }
 
 body {
-    background-image: url(/img/sean-stratton-ObpCE_X3j6U-unsplash.jpg);
+    /* background-image: url(/img/sean-stratton-ObpCE_X3j6U-unsplash.jpg); */
     /* background-attachment: fixed; */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-position: 50% 50%;
     background-color: #000000a6;
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    -webkit-background-size: cover;
+    -webkit-background-size: cover; */
 }
 
 
 header {
-    background-color: #000000a6;
+    background-image: url(/img/sean-stratton-ObpCE_X3j6U-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
     height: 26rem;
     /* padding: 2rem; */
 }
 
+header .mask{
+    background-color: hsla(0, 0%, 0%, 0.7);
+}
+
 .people-gallery {
     background-image: url(/img/uits-bg.png);
-    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-position: 50% 0%;
     width: 100%;
@@ -46,9 +55,9 @@ header {
     top: -7.5rem;
 }
 
-/* .people-container-bg {
+.people-container-bg {
     position: absolute;
-    background-color: black;
+    background-color: white;
     border-radius: 32px;
     padding: 3rem;
     width: calc(100% - 15rem);
@@ -56,7 +65,7 @@ header {
     right: 0;
     left: 12rem;
     top: -11rem;
-} */
+} 
 
 .tab button{
     border: none;
@@ -123,21 +132,6 @@ span.position{
     color: #4d6a52;
     
 }
-
-/* .rounded-circle:not(.active){
-    background-color: #fff;
-} */
-
-/* button.active.rounded-circle{
-    background-color: #fff;
-} */
-
-/* .people-roles .rounded-circle > i:active,
-.people-roles .rounded-circle > i:hover,
-.people-roles .rounded-circle > i:focus {
-    color: #2b4e32;
-    background-color: white;
-} */
 
 .people-roles-item {
     color: #2b4e32;
@@ -209,7 +203,7 @@ span.position{
 }
 
 @media only screen and (width > 1500px) {
-    .people-container-bg {
+    /* .people-container-bg {
         position: absolute;
         background-color: white;
         border-radius: 32px;
@@ -219,10 +213,10 @@ span.position{
         margin: 0 auto;
         left: 12rem;
         top: -11rem;
-    }
+    } */
 }
 
-@media only screen and (width < 1500px) {
+/* @media only screen and (width < 1500px) {
     .people-container-bg {
         position: absolute;
         background-color: white;
@@ -234,8 +228,8 @@ span.position{
         right: 0;
         left: 0;
         top: -11rem;
-    }
-}
+    }jjj 
+} */
 
 @media only screen and (width <= 1200px) {
     .people-roles {
