@@ -26,8 +26,16 @@
         <nav class="navbar navbar-expand-lg my-4 mx-5 rounded-5 shadow-lg px-4">
           <div class="container-fluid">
             <!-- LOGO -->
-            <img class="t-logo" src="img/knust.png" alt="logo" width="50" height="70" />
-            <a class="navbar-brand ms-2 text-success" href="index.html">UITS-KNUST</a>
+            <img
+              class="t-logo"
+              src="img/knust.png"
+              alt="logo"
+              width="50"
+              height="70"
+            />
+            <a class="navbar-brand ms-2 text-success" href="index.html"
+              >UITS-KNUST</a
+            >
             <!-- TOGGLE BUTTON -->
             <button
               class="navbar-toggler shadow-none border-0 bg-success"
@@ -39,141 +47,385 @@
               <span class="navbar-toggler-icon text-light"></span>
             </button>
             <!-- NAV-BAR -->
-             <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
               <!-- NAV-BAR BODY -->
-                <ul
-                  class="navbar-nav justify-content-end flex-grow-1 pe-3"
-                  id="myDiv"
-                >
-                  <li class="nav-item mx-2">
-                    <a class="nav-link" href="index.html"
-                      >HOME</a
-                    >
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a class="nav-link" href="principles.html"
-                      >PRINCIPLES</a
-                    >
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a class="nav-link" href="projects.html"
-                      >PROJECTS</a
-                    >
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a class="nav-link active text-success" href="people.html">PEOPLE</a>
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a class="nav-link" href="press.html">PRESS</a>
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a class="nav-link" href="png.html">PING</a>
-                  </li>
-                </ul>
-                <!-- Expandable Search Bar -->
-                <div class="search-container" id="searchBox">
-                  <!-- Search Icon inside -->
-                  <i class="bi bi-search"></i>
-                  <!-- Search Input -->
-                  <input type="text" placeholder="Search..." />
-                </div>
+              <ul
+                class="navbar-nav justify-content-end flex-grow-1 pe-3"
+                id="myDiv"
+              >
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="principles.html">PRINCIPLES</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="projects.html">PROJECTS</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link active text-success" href="people.html"
+                    >PEOPLE</a
+                  >
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="press.html">PRESS</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="png.html">PING</a>
+                </li>
+              </ul>
+              <!-- Expandable Search Bar -->
+              <div class="search-container" id="searchBox">
+                <!-- Search Icon inside -->
+                <i class="bi bi-search"></i>
+                <!-- Search Input -->
+                <input type="text" placeholder="Search..." />
+              </div>
             </div>
           </div>
         </nav>
         <h2 class="text-white m-5">People</h2>
       </header>
-      
 
       <!-- SIDEBAR -->
 
       <!-- SIDEBAR BODY -->
-      <div class="sidebar offcanvas offcanvas-start bg-dark" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+      <div
+        class="sidebar offcanvas offcanvas-start bg-dark"
+        tabindex="-1"
+        id="mobileMenu"
+        aria-labelledby="mobileMenuLabel"
+      >
         <div class="offcanvas-header">
           <h5 class="offcanvas-title text-success" id="offcanvasNavbarLabel">
             UITS-KNUST
           </h5>
-            <button type="button" class="btn-close shadow-none btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button
+            type="button"
+            class="btn-close shadow-none btn-close-white"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
         </div>
         <div class="offcanvas-body mx-3">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="principles.html">Principles</a></li>
-                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="people.html">People</a></li>
-                <li class="nav-item"><a class="nav-link" href="press.html">Press</a></li>
-                <li class="nav-item"><a class="nav-link" href="png.html">Ping</a></li>
-            </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="principles.html">Principles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="people.html">People</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="press.html">Press</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="png.html">Ping</a>
+            </li>
+          </ul>
         </div>
-    </div>
+      </div>
 
+      <!-- MOBILE -->
+      <div class="container">
+        <h2 class="text-center">Meet the <strong>team.</strong></h2>
 
+        <div class="dropdown my-3">
+          <button
+            class="btn btn-outline-dark w-100 dropdown-toggle d-flex align-items-center justify-content-around mb-4"
+            type="button"
+            id="teamDropdown"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Senior Members
+          </button>
+          <ul class="dropdown-menu w-100" aria-labelledby="teamDropdown">
+            <li>
+              <a
+                class="dropdown-item"
+                href="#!"
+                onclick="showTeam('members', ' Senior Members')"
+                >Senior Members</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="#!"
+                onclick="showTeam('senior', 'Senior Staff')"
+                >Senior Staff</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="#!"
+                onclick="showTeam('junior', 'Junior Staff')"
+                >Junior Staff</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="#!"
+                onclick="showTeam('contract', 'Contract Staff')"
+                >Contract Staff</a
+              >
+            </li>
+          </ul>
+        </div>
 
+        <div id="teamContainer">
+          <!-- Senior Members -->
+          <div id="members" class="team-group">
+            <div class="team-card">
+              <img src="./img/Emma.jpg" alt="Steve Ambuul" />
+              <div>
+                <strong>Steve Ambuul</strong>
+                <p class="text-muted mb-0">Director of Revenue Operations</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="/img/Emmanuel-Afful.jpg" alt="Mel Phelps Cevik" />
+              <div>
+                <strong>Mel Phelps Cevik</strong>
+                <p class="text-muted mb-0">Regional Director, APAC</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="/img/Emma.jpg" alt="Alden Dale" />
+              <div>
+                <strong>Alden Dale</strong>
+                <p class="text-muted mb-0">Director of Solutions</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="./img/Emma.jpg" alt="Steve Ambuul" />
+              <div>
+                <strong>Steve Ambuul</strong>
+                <p class="text-muted mb-0">Director of Revenue Operations</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="./img/Emma.jpg" alt="Steve Ambuul" />
+              <div>
+                <strong>Steve Ambuul</strong>
+                <p class="text-muted mb-0">Director of Revenue Operations</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="./img/Emma.jpg" alt="Steve Ambuul" />
+              <div>
+                <strong>Steve Ambuul</strong>
+                <p class="text-muted mb-0">Director of Revenue Operations</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Senior Staff -->
+          <div id="senior" class="team-group d-none">
+            <div class="team-card">
+              <img src="/img/Emma.jpg" alt="Jane Doe" />
+              <div>
+                <strong>Jane Doe</strong>
+                <p class="text-muted mb-0">Senior Engineer</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="./img/Emma.jpg" alt="Steve Ambuul" />
+              <div>
+                <strong>Steve Ambuul</strong>
+                <p class="text-muted mb-0">Director of Revenue Operations</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="./img/Emma.jpg" alt="Steve Ambuul" />
+              <div>
+                <strong>Steve Ambuul</strong>
+                <p class="text-muted mb-0">Director of Revenue Operations</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="./img/Emma.jpg" alt="Steve Ambuul" />
+              <div>
+                <strong>Steve Ambuul</strong>
+                <p class="text-muted mb-0">Director of Revenue Operations</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="./img/Emma.jpg" alt="Steve Ambuul" />
+              <div>
+                <strong>Steve Ambuul</strong>
+                <p class="text-muted mb-0">Director of Revenue Operations</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="./img/Emma.jpg" alt="Steve Ambuul" />
+              <div>
+                <strong>Steve Ambuul</strong>
+                <p class="text-muted mb-0">Director of Revenue Operations</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Junior Staff -->
+          <div id="junior" class="team-group d-none">
+            <div class="team-card">
+              <img src="/img/Emma.jpg" alt="John Smith" />
+              <div>
+                <strong>John Smith</strong>
+                <p class="text-muted mb-0">Marketing Lead</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="./img/Emma.jpg" alt="Steve Ambuul" />
+              <div>
+                <strong>Steve Ambuul</strong>
+                <p class="text-muted mb-0">Director of Revenue Operations</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="./img/Emma.jpg" alt="Steve Ambuul" />
+              <div>
+                <strong>Steve Ambuul</strong>
+                <p class="text-muted mb-0">Director of Revenue Operations</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="./img/Emma.jpg" alt="Steve Ambuul" />
+              <div>
+                <strong>Steve Ambuul</strong>
+                <p class="text-muted mb-0">Director of Revenue Operations</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="./img/Emma.jpg" alt="Steve Ambuul" />
+              <div>
+                <strong>Steve Ambuul</strong>
+                <p class="text-muted mb-0">Director of Revenue Operations</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="./img/Emma.jpg" alt="Steve Ambuul" />
+              <div>
+                <strong>Steve Ambuul</strong>
+                <p class="text-muted mb-0">Director of Revenue Operations</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contracct Staff -->
+          <div id="contract" class="team-group d-none">
+            <div class="team-card">
+              <img src="/img/Emma.jpg" alt="John Smith" />
+              <div>
+                <strong>Francis Amenyo</strong>
+                <p class="text-muted mb-0">Marketing Lead</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="./img/Emma.jpg" alt="Steve Ambuul" />
+              <div>
+                <strong>Steve Ambuul</strong>
+                <p class="text-muted mb-0">Director of Revenue Operations</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="./img/Emma.jpg" alt="Steve Ambuul" />
+              <div>
+                <strong>Steve Ambuul</strong>
+                <p class="text-muted mb-0">Director of Revenue Operations</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="./img/Emma.jpg" alt="Steve Ambuul" />
+              <div>
+                <strong>Steve Ambuul</strong>
+                <p class="text-muted mb-0">Director of Revenue Operations</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="./img/Emma.jpg" alt="Steve Ambuul" />
+              <div>
+                <strong>Steve Ambuul</strong>
+                <p class="text-muted mb-0">Director of Revenue Operations</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="./img/Emma.jpg" alt="Steve Ambuul" />
+              <div>
+                <strong>Steve Ambuul</strong>
+                <p class="text-muted mb-0">Director of Revenue Operations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DESKTOP -->
       <!-- PEOPLE GALLERY -->
-      <section class="people-gallery">
+      <section class="people-gallery d-none">
         <div class="people-container-bg"></div>
         <div class="people">
           <div class="container">
             <div class="row">
-
-              <!-- MOBILE OPTION-SELECT -->
-
-              <!-- <div>
-                <label for="category">Select Category:</label>
-                <select id="category" onchange="updateList()">
-                  <option value="leadership">Leadership</option>
-                  <option value="team">Team</option>
-                  <option value="advisors">Advisors</option>
-                </select>
-              </div> -->
-              
-              <!-- <div id="names-list">
-              
-                <div>
-                  <h3>Steve Ambuul</h3>
-                  <p>Director of Revenue Operations</p>
-                </div>
-                <div>
-                  <h3>Mel Phelps Cevik</h3>
-                  <p>Regional Director, APAC</p>
-                </div>
-              </div> -->
-              
-
               <!-- DESKTOP -->
               <div class="people-roles-bg col-12 col-md-3 tab">
                 <div class="people-roles p-3 rounded-5">
-                  <button class="people-roles-item m-3 tablinks rounded-pill active" onclick="openRank(event,'Senior')" id="defaultOpen">
+                  <button
+                    class="people-roles-item m-3 tablinks rounded-pill active"
+                    onclick="openRank(event,'Senior')"
+                    id="defaultOpen"
+                  >
                     <div class="rounded-circle me-2">
                       <i class="bi bi-person fs-3"></i>
                     </div>
                     <span class="fs-7">Senior Members</span>
                   </button>
 
-                  <button class="people-roles-item m-3 tablinks rounded-pill " onclick="openRank(event,'Staff')">
+                  <button
+                    class="people-roles-item m-3 tablinks rounded-pill"
+                    onclick="openRank(event,'Staff')"
+                  >
                     <div class="rounded-circle me-2">
                       <i class="bi bi-person fs-3"></i>
                     </div>
                     <span class="fs-7">Senior Staff</span>
                   </button>
 
-                  <button class="people-roles-item m-3 tablinks rounded-pill " onclick="openRank(event,'Junior')">
+                  <button
+                    class="people-roles-item m-3 tablinks rounded-pill"
+                    onclick="openRank(event,'Junior')"
+                  >
                     <div class="rounded-circle me-2">
                       <i class="bi bi-person fs-3"></i>
                     </div>
                     <span class="fs-7">Junior Staff</span>
                   </button>
 
-                  <button class="people-roles-item m-3 tablinks rounded-pill " onclick="openRank(event,'Contract')">
+                  <button
+                    class="people-roles-item m-3 tablinks rounded-pill"
+                    onclick="openRank(event,'Contract')"
+                  >
                     <div class="rounded-circle me-2">
                       <i class="bi bi-person fs-3"></i>
                     </div>
                     <span class="fs-7">Contract Staff</span>
                   </button>
                 </div>
-              </div> 
+              </div>
 
               <!-- SENIOR MEMBERS -->
-              <div class="people-images col-12 col-md-9 rounded-pill tabcontent" id="Senior">
+              <div
+                class="people-images col-12 col-md-9 rounded-pill tabcontent"
+                id="Senior"
+              >
                 <div class="row">
                   <div class="people-images-item col-12 col-sm-6 col-lg-4">
                     <div class="mx-1">
@@ -365,7 +617,10 @@
                 </div>
               </div>
               <!-- SENIOR STAFF -->
-              <div class="people-images col-12 col-md-9 rounded-5 tabcontent rankName" id="Staff">
+              <div
+                class="people-images col-12 col-md-9 rounded-5 tabcontent rankName"
+                id="Staff"
+              >
                 <div class="row">
                   <div class="people-images-item col-12 col-sm-6 col-lg-4">
                     <div class="mx-1">
@@ -557,7 +812,10 @@
                 </div>
               </div>
               <!-- JUNIOR STAFF -->
-              <div class="people-images col-12 col-md-9 rounded-5 tabcontent rankName" id="Junior">
+              <div
+                class="people-images col-12 col-md-9 rounded-5 tabcontent rankName"
+                id="Junior"
+              >
                 <div class="row">
                   <div class="people-images-item col-12 col-sm-6 col-lg-4">
                     <div class="mx-1">
@@ -751,7 +1009,10 @@
 
               <!-- CONTRACT -->
 
-              <div class="people-images col-12 col-md-9 rounded-5 tabcontent rankName" id="Contract">
+              <div
+                class="people-images col-12 col-md-9 rounded-5 tabcontent rankName"
+                id="Contract"
+              >
                 <div class="row">
                   <div class="people-images-item col-12 col-sm-6 col-lg-4">
                     <div class="mx-1">

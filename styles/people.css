@@ -3,17 +3,32 @@
     padding: 0;
 }
 
-body {
-    /* background-image: url(/img/sean-stratton-ObpCE_X3j6U-unsplash.jpg); */
-    /* background-attachment: fixed; */
-    /* background-repeat: no-repeat;
+/* body {
+    background-image: url(/img/sean-stratton-ObpCE_X3j6U-unsplash.jpg); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-position: 50% 50%;
     background-color: #000000a6;
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    -webkit-background-size: cover; */
+    -webkit-background-size: cover; 
+} */
+
+/* Mobile */
+.team-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }
+.team-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
 
 
 header {
@@ -198,9 +213,9 @@ span.position{
     box-shadow: #caebdb 0px 2.5px 12px;
 }
 
-.people-images-item-details span{
+/* .people-images-item-details span{
     
-}
+} */
 
 @media only screen and (width > 1500px) {
     /* .people-container-bg {
