@@ -3,17 +3,17 @@
     padding: 0;
 }
 
-/* body {
-    background-image: url(/img/sean-stratton-ObpCE_X3j6U-unsplash.jpg); 
-    background-attachment: fixed;
+
+body {
+    background-image: url(/img/sean-stratton-ObpCE_X3j6U-unsplash.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-color: #000000a6;
+    background-position: center;
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    -webkit-background-size: cover; 
-} */
+    -webkit-background-size: cover;
+    height: 60vh;
+}
 
 /* Mobile */
 .team-card {
@@ -27,20 +27,6 @@
     height: 50px;
     border-radius: 50%;
     margin-right: 10px;
-}
-
-
-
-header {
-    background-image: url(/img/sean-stratton-ObpCE_X3j6U-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
-    height: 26rem;
-    /* padding: 2rem; */
 }
 
 header .mask{
@@ -57,6 +43,7 @@ header .mask{
     -o-background-size: cover;
     -webkit-background-size: cover;
     position: relative;
+    top: 7rem;
 }
 
 .people {
@@ -67,7 +54,7 @@ header .mask{
     left: 0;
     right: 0;
     bottom: 0;
-    top: -7.5rem;
+    top: -5.3rem; 
 }
 
 .people-container-bg {
@@ -79,7 +66,7 @@ header .mask{
     height: calc(100% + 6rem);
     right: 0;
     left: 12rem;
-    top: -11rem;
+    top: -8rem;
 } 
 
 .tab button{
@@ -159,14 +146,6 @@ span.position{
     box-shadow: #caebdb 0px 2.5px 12px;
     padding: .3rem .25rem;
 }
-
-/* .people-roles-item:active,
-.people-roles-item:hover,
-.people-roles-item:focus {
-    background-color: #2b4e32;
-    color: white;
-} */
-
 
 
 .people-images {

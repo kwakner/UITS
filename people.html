@@ -84,7 +84,7 @@
             </div>
           </div>
         </nav>
-        <h2 class="text-white m-5">People</h2>
+        <h2 class="text-white m-5 d-none d-lg-block">People</h2>
       </header>
 
       <!-- SIDEBAR -->
@@ -229,7 +229,7 @@
           </div>
 
           <!-- Senior Staff -->
-          <div id="senior" class="team-group d-none">
+          <div id="senior" class="team-group d-lg-none">
             <div class="team-card">
               <img src="/img/Emma.jpg" alt="Jane Doe" />
               <div>
@@ -320,7 +320,7 @@
             </div>
           </div>
 
-          <!-- Contracct Staff -->
+          <!-- Contract Staff -->
           <div id="contract" class="team-group d-none">
             <div class="team-card">
               <img src="/img/Emma.jpg" alt="John Smith" />
@@ -370,833 +370,834 @@
 
       <!-- DESKTOP -->
       <!-- PEOPLE GALLERY -->
-      <section class="people-gallery">
+      <section class="people-gallery d-none d-lg-block">
         <div class="people-container-bg"></div>
-        <div class="people">
-          <div class="container">
-            <div class="row">
-              <!-- DESKTOP -->
-              <div class="people-roles-bg col-12 col-md-3 tab">
-                <div class="people-roles p-3 rounded-5">
-                  <button
-                    class="people-roles-item m-3 tablinks rounded-pill active"
-                    onclick="openRank(event,'Senior')"
-                    id="defaultOpen"
-                  >
-                    <div class="rounded-circle me-2">
-                      <i class="bi bi-person fs-3"></i>
-                    </div>
-                    <span class="fs-7">Senior Members</span>
-                  </button>
+          <div class="people">
+            <div class="container">
+              <div class="row">
+                <!-- DESKTOP -->
+                <div class="people-roles-bg col-12 col-md-3 tab">
+                  <div class="people-roles p-3 rounded-5">
+                    <button
+                      class="people-roles-item m-3 tablinks rounded-pill active"
+                      onclick="openRank(event,'Senior')"
+                      id="defaultOpen"
+                    >
+                      <div class="rounded-circle me-2">
+                        <i class="bi bi-person fs-3"></i>
+                      </div>
+                      <span class="fs-7">Senior Members</span>
+                    </button>
 
-                  <button
-                    class="people-roles-item m-3 tablinks rounded-pill"
-                    onclick="openRank(event,'Staff')"
-                  >
-                    <div class="rounded-circle me-2">
-                      <i class="bi bi-person fs-3"></i>
-                    </div>
-                    <span class="fs-7">Senior Staff</span>
-                  </button>
+                    <button
+                      class="people-roles-item m-3 tablinks rounded-pill"
+                      onclick="openRank(event,'Staff')"
+                    >
+                      <div class="rounded-circle me-2">
+                        <i class="bi bi-person fs-3"></i>
+                      </div>
+                      <span class="fs-7">Senior Staff</span>
+                    </button>
 
-                  <button
-                    class="people-roles-item m-3 tablinks rounded-pill"
-                    onclick="openRank(event,'Junior')"
-                  >
-                    <div class="rounded-circle me-2">
-                      <i class="bi bi-person fs-3"></i>
-                    </div>
-                    <span class="fs-7">Junior Staff</span>
-                  </button>
+                    <button
+                      class="people-roles-item m-3 tablinks rounded-pill"
+                      onclick="openRank(event,'Junior')"
+                    >
+                      <div class="rounded-circle me-2">
+                        <i class="bi bi-person fs-3"></i>
+                      </div>
+                      <span class="fs-7">Junior Staff</span>
+                    </button>
 
-                  <button
-                    class="people-roles-item m-3 tablinks rounded-pill"
-                    onclick="openRank(event,'Contract')"
-                  >
-                    <div class="rounded-circle me-2">
-                      <i class="bi bi-person fs-3"></i>
-                    </div>
-                    <span class="fs-7">Contract Staff</span>
-                  </button>
-                </div>
-              </div>
-
-              <!-- SENIOR MEMBERS -->
-              <div
-                class="people-images col-12 col-md-9 rounded-pill tabcontent"
-                id="Senior"
-              >
-                <div class="row">
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
+                    <button
+                      class="people-roles-item m-3 tablinks rounded-pill"
+                      onclick="openRank(event,'Contract')"
+                    >
+                      <div class="rounded-circle me-2">
+                        <i class="bi bi-person fs-3"></i>
                       </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
-                        </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
-                        </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
-                        </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
-                        </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
-                        </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
-                        </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
-                        </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
-                        </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
-                        </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
-                        </div>
-                      </div>
-                    </div>
+                      <span class="fs-7">Contract Staff</span>
+                    </button>
                   </div>
                 </div>
-              </div>
-              <!-- SENIOR STAFF -->
-              <div
-                class="people-images col-12 col-md-9 rounded-5 tabcontent rankName"
-                id="Staff"
-              >
-                <div class="row">
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Mroles</span>
-                          <span class="position">Senior Systems Analyst</span>
-                        </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
-                        </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
 
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
+                <!-- SENIOR MEMBERS -->
+                <div
+                  class="people-images col-12 col-md-9 rounded-pill tabcontent"
+                  id="Senior"
+                >
+                  <div class="row">
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
                         </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
-                        </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
                         </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
-                        </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
                         </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
                         </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
                         </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
+                        </div>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
+                        </div>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
+                        </div>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
+                        </div>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- JUNIOR STAFF -->
-              <div
-                class="people-images col-12 col-md-9 rounded-5 tabcontent rankName"
-                id="Junior"
-              >
-                <div class="row">
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Amenyo Francis</span>
-                          <span class="position">Senior Systems Analyst</span>
+                <!-- SENIOR STAFF -->
+                <div
+                  class="people-images col-12 col-md-9 rounded-5 tabcontent rankName"
+                  id="Staff"
+                >
+                  <div class="row">
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
                         </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
-                        </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Mroles</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
+                        </div>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
                         </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
-                        </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
                         </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
                         </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
                         </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
                         </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
                         </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
+                        </div>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-
-              <!-- CONTRACT -->
-
-              <div
-                class="people-images col-12 col-md-9 rounded-5 tabcontent rankName"
-                id="Contract"
-              >
-                <div class="row">
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Contract Staff</span>
-                          <span class="position">Senior Systems Analyst</span>
+                <!-- JUNIOR STAFF -->
+                <div
+                  class="people-images col-12 col-md-9 rounded-5 tabcontent rankName"
+                  id="Junior"
+                >
+                  <div class="row">
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
                         </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Amenyo Francis</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
+                        </div>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
+                        </div>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
+                        </div>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
+                        </div>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
+                        </div>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
+                        </div>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
+                        </div>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
+                        </div>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
+                </div>
+
+                <!-- CONTRACT -->
+
+                <div
+                  class="people-images col-12 col-md-9 rounded-5 tabcontent rankName"
+                  id="Contract"
+                >
+                  <div class="row">
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
                         </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Contract Staff</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
                         </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
-                        </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
                         </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
                         </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
                         </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
                         </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="people-images-item col-12 col-sm-6 col-lg-4">
-                    <div class="mx-1">
-                      <div class="people-images-item-image">
-                        <img
-                          src="/img/Emmanuel-Afful.jpg"
-                          alt="profile-img"
-                          class=""
-                        />
-                      </div>
-                      <div class="people-images-item-details rounded-pill">
-                        <div class="d-flex flex-column">
-                          <span class="title">Emmanuel Afful</span>
-                          <span class="position">Senior Systems Analyst</span>
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
                         </div>
-                        <div class="rounded-circle me-2">
-                          <i class="bi bi-arrow-right-circle fs-4"></i>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
+                        </div>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="people-images-item col-12 col-sm-6 col-lg-4">
+                      <div class="mx-1">
+                        <div class="people-images-item-image">
+                          <img
+                            src="/img/Emmanuel-Afful.jpg"
+                            alt="profile-img"
+                            class=""
+                          />
+                        </div>
+                        <div class="people-images-item-details rounded-pill">
+                          <div class="d-flex flex-column">
+                            <span class="title">Emmanuel Afful</span>
+                            <span class="position">Senior Systems Analyst</span>
+                          </div>
+                          <div class="rounded-circle me-2">
+                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1205,7 +1206,6 @@
               </div>
             </div>
           </div>
-        </div>
       </section>
 
       <!-- FOOTER -->
