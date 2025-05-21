@@ -281,6 +281,10 @@ span.position{
 }
 
 @media only screen and (width <= 550px) {
+    body{
+        background: none;
+    }
+
     .people-container-bg {
         width: 100%;
     }
